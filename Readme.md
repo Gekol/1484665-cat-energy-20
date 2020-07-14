@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Heorhii Sokolovskyi](https://up.htmlacademy.ru/adaptive/20/user/1484665).
-* Наставник: `Неизвестно`.
+* Наставник: `Арсений Березин`(https://up.htmlacademy.ru/adaptive/20/user/263537).
 
 ---
 
