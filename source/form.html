@@ -1,87 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+
 <body>
-    <header class="page-header">
-      <a href="index.html">
-        <img src="img/logo-mobile.svg" alt="Cat energy">
-        <img src="img/logo-2.svg" alt="Cat energy">
-      </a>
-      <div class="burger-menu">
-        <div class="burger-layer first"></div>
-        <div class="burger-layer second"></div>
-        <div class="burger-layer third"></div>
-      </div>
-      <ul class="menu">
-        <li class="menu__item">
-          <a href="index.html" class="menu__link">Главная</a>
-        </li>
-        <li class="menu__item">
-          <a href="catalog.html" class="menu__link">Каталог продукции</a>
-        </li>
-        <li class="menu__item">
-          <a href="form.html" class="menu__link">Подбор программы</a>
-        </li>
+  <header class="page-header">
+    <a href="index.html">
+      <img src="img/logo-mobile.svg" alt="Cat energy">
+      <img src="img/logo-2.svg" alt="Cat energy">
+    </a>
+    <div class="burger-menu">
+      <div class="burger-layer first"></div>
+      <div class="burger-layer second"></div>
+      <div class="burger-layer third"></div>
+    </div>
+    <ul class="menu">
+      <li class="menu__item">
+        <a href="index.html" class="menu__link">Главная</a>
+      </li>
+      <li class="menu__item">
+        <a href="catalog.html" class="menu__link">Каталог продукции</a>
+      </li>
+      <li class="menu__item">
+        <a href="form.html" class="menu__link">Подбор программы</a>
+      </li>
+    </ul>
+  </header>
+  <main>
+    <form action="">
+      <caption>Подбор программы</caption>
+      <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      <fieldset>
+        <label for="name">Имя:*<input type="text" id="name" value="Барсик" required></label>
+        <label for="weight">Вес (кг):*<input type="text" id="weight" value="7" required></label>
+        <label for="age">Возраст (лет):<input type="text" id="age" value="7"></label>
+      </fieldset>
+      <fieldset>
+        <input type="radio" name="aim" id="slim"><label for="slim">Похудение</label>
+        <input type="radio" name="aim" id="pro"><label for="pro">Набор массы</label>
+        <input type="radio" name="aim" id="unknown"><label for="unknown">Не знаю (Нужен ваш совет)</label>
+      </fieldset>
+      <fieldset>
+        <legend>Контактные данные (владельца кота)</legend>
+        <label for="email">Email:*</label> <input type="email" id="email" value="kuklachev@gmail.com" required>
+        <label for="phone">Телефон:*</label> <input type="tel" id="phone" value="8 (960) 900-60-90" required>
+      </fieldset>
+      <fieldset>
+        <legend>Комментарий</legend>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Дополнительно</legend>
+        <input type="checkbox" id="sugar"> <label for="">Сахарозаменитель</label>
+        <input type="checkbox" id="water"> <label for="">Питьевая вода</label>
+        <input type="checkbox" id="milk"> <label for="">Молоко</label>
+        <input type="checkbox" id="vitamins"> <label for="">Витамины</label>
+      </fieldset>
+      <input type="submit" value="отправить заявку">
+      <p>* — Обязательные поля</p>
+    </form>
+  </main>
+  <footer class="footer-links">
+    <div class="contacts">
+      <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
+    <img src="img/location.png" alt="location">
+    <div class="logo">
+      <img src="img/logo-2.svg" alt="Cat energy" width="128px" height="24px">
+    </div>
+    <div class="networks">
+      <ul class="networks-list">
+        <li class="networks__item vk"></li>
+        <li class="networks__item insta"></li>
+        <li class="networks__item facebook"></li>
       </ul>
-    </header>
-    <main>
-        <form action="">
-            <caption>Подбор программы</caption>
-            <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
-            <fieldset>
-                <label for="name">Имя:*<input type="text" id="name" value="Барсик" required></label>
-                <label for="weight">Вес (кг):*<input type="text" id="weight" value="7" required></label>
-                <label for="age">Возраст (лет):<input type="text" id="age" value="7"></label>
-            </fieldset>
-            <fieldset>
-                <input type="radio" name="aim" id="slim"><label for="slim">Похудение</label>
-                <input type="radio" name="aim" id="pro"><label for="pro">Набор массы</label>
-                <input type="radio" name="aim" id="unknown"><label for="unknown">Не знаю (Нужен ваш совет)</label>
-            </fieldset>
-            <fieldset>
-                <legend>Контактные данные (владельца кота)</legend>
-                <label for="email">Email:*</label> <input type="email" id="email" value="kuklachev@gmail.com" required>
-                <label for="phone">Телефон:*</label> <input type="tel" id="phone" value="8 (960) 900-60-90" required>
-            </fieldset>
-            <fieldset>
-                <legend>Комментарий</legend>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </fieldset>
-            <fieldset>
-                <legend>Дополнительно</legend>
-                <input type="checkbox" id="sugar"> <label for="">Сахарозаменитель</label>
-                <input type="checkbox" id="water"> <label for="">Питьевая вода</label>
-                <input type="checkbox" id="milk"> <label for="">Молоко</label>
-                <input type="checkbox"id="vitamins"> <label for="">Витамины</label>
-            </fieldset>
-            <input type="submit" value="отправить заявку">
-            <p>* — Обязательные поля</p>
-        </form>
-    </main>
-    <footer class="footer-links">
-      <div class="contacts">
-        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </div>
-      <img src="img/location.png" alt="location">
-      <div class="logo">
-        <img src="img/logo-2.svg" alt="Cat energy" width="128px" height="24px">
-      </div>
-      <div class="networks">
-        <ul class="networks-list">
-          <li class="networks__item vk"></li>
-          <li class="networks__item insta"></li>
-          <li class="networks__item facebook"></li>
-        </ul>
-      </div>
-      <div class="htmlacademy">
-        <p>HTML Academy</p>
-        <img src="img/htmlacademy.svg" alt="htmlacademy" width="27px" height="34px">
-      </div>
-    </footer>
+    </div>
+    <div class="htmlacademy">
+      <p>HTML Academy</p>
+      <img src="img/htmlacademy.svg" alt="htmlacademy" width="27px" height="34px">
+    </div>
+  </footer>
 </body>
+
 </html>
