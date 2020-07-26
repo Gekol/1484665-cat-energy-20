@@ -1,0 +1,28 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.content-header {
+    background: url("../img/index-background-mobile.jpg") no-repeat;
+    text-align: center;
+    padding-top: 27px;
+
+    &-title {
+        .set-font(36px, 36px);
+        color: @white-color;
+        margin: 0;
+        margin-bottom: 25px;
+        font-weight: normal;
+    }
+    
+    &-subtitle {
+        .set-font(14px, 14px);
+        color: @white-color;
+        margin: 0;
+        margin-bottom: 29px;
+        text-transform: uppercase;
+        font-weight: normal;
+    }
+}

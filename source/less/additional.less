@@ -1,0 +1,81 @@
+.additional-goods {
+    padding: 0 20px 35px;
+
+    &__title {
+        .set-font(24px, 24px);
+        margin-top: 28px;
+        margin-bottom: 35px;
+        position: relative;
+    }
+
+    &__title::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 53px;
+        border: 2px solid @choose-program-color;
+        right: -20px;
+        bottom: 50%;
+        margin-bottom: -2px;
+    }
+
+    &__list {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    &__item {
+        padding-top: 13px;
+        border-top: 1px solid @footer-block-border-color;
+    }
+
+    &__item:last-child {
+        border-bottom: 1px solid @footer-block-border-color;
+    }
+
+    &__type {
+        .set-font(16px, 16px);
+        text-transform: uppercase;
+        color: @food-type-color;
+    }
+}
+
+.properties {
+    display: flex;
+    justify-content: space-between;
+    color: @concept-color;
+
+    &__weight {
+        .set-font(14px, 16px);
+    }
+
+    &__price {
+        .set-font(14px, 14px);
+    }
+}
+
+.gift {
+    width: 280px;
+    height: 289px;
+    background-image: url("../img/gift-photo-mobile.jpg");
+    position: relative;
+
+    &__image {
+        position: absolute;
+        margin: auto;
+        left: 50%;
+        margin-left: -39px;
+        top: 70px;
+    }
+
+    &__info {
+        color: @white-color;
+        position: absolute;
+        width: 160px;
+        top: 165px;
+        left: 50%;
+        margin-left: -80px;
+        text-align: center;
+        .set-font(16px, 20px, Arial);
+    }
+}
