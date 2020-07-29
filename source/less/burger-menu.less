@@ -1,0 +1,32 @@
+.burger-layer {
+  content: "";
+  position: absolute;
+  background-color: @black-color;
+  display: block;
+  width: 24px;
+  height: 2px;
+}
+
+.burger-menu {
+  width: 24px;
+  height: 16px;
+}
+
+.burger-menu__layer {
+  position: relative;
+}
+
+.burger-menu__layer.first::before {
+  .burger-layer();
+  top: 0;
+}
+
+.burger-menu__layer.second::before {
+  .burger-layer();
+  top: 8px;
+}
+
+.burger-menu__layer.third::before {
+  .burger-layer();
+  top: 16px;
+}
