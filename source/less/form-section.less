@@ -1,0 +1,38 @@
+.form-section__subtitle {
+    position: relative;
+    .set-font(24px, 26px);
+    font-weight: normal;
+    margin: 27px 0 32px;
+
+    &:first-of-type {
+        margin-top: 6px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 3px;
+        background-color: @choose-program-color;
+        right: 0px;
+        top: 12px;
+        margin-bottom: -2px;
+    }
+}
+
+.form-section__comment-text {
+    .set-font(16px, 18px);
+    text-transform: uppercase;
+}
+
+.master-title::after {
+    width: 99px;
+}
+
+.comment-title::after {
+    width: 158px;
+}
+
+.additional-title::after {
+    width: 136px;
+}

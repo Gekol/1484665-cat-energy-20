@@ -1,54 +1,52 @@
-.food {
-    &__title {
-        .set-font(36px, 36px);
-        font-weight: normal;
-        margin: 0;
-        padding-top: 27px;
-        padding-bottom: 41px;
-        padding-left: 20px;
-    }
-
-    &__list {
-        display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    &__item {
-        display: flex;
-        flex-direction: column;
-        padding-left: 20px;
-        padding-right: 18px;
-        padding-top: 19px;
-        border-top: 1px solid @footer-block-border-color;
-    }
-
-    &__info {
-        display: flex;
-        align-items: center;
-    }
-
-    &__description {
-        flex-grow: 2;
-    }
-
-    &__type {
-        .set-font(16px, 20px);
-        text-transform: uppercase;
-        width: 76px;
-        color: @food-type-color;
-        margin: 0;
-        margin-bottom: 18px;
-    }
-
-    &_detail {
-        display: flex;
-        justify-content: space-between;
-    }
+.food__title {
+    .set-font(36px, 36px);
+    font-weight: normal;
+    margin: 0;
+    padding-top: 27px;
+    padding-bottom: 41px;
+    padding-left: 20px;
 }
 
-.order-button {
+.food__list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.food__item {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 18px;
+    padding-top: 19px;
+    border-top: 1px solid @footer-block-border-color;
+}
+
+.food__info {
+    display: flex;
+    align-items: center;
+}
+
+.food__description {
+    flex-grow: 2;
+}
+
+.food__type {
+    .set-font(16px, 20px);
+    text-transform: uppercase;
+    width: 76px;
+    color: @food-type-color;
+    margin: 0;
+    margin-bottom: 18px;
+}
+
+.food-detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.food__order-button {
     width: 100%;
     height: 40px;
     .set-font(16px, 16px);
@@ -59,31 +57,4 @@
     margin-top: 13px;
     margin-bottom: 25px;
     padding: 6px 0;
-}
-
-.show-more {
-    border-bottom: 1px solid @footer-block-border-color;
-    align-items: center;
-
-    &__title {
-        .set-font(16px, 20px);
-        text-transform: uppercase;
-        color: @show-more-title-color;
-        margin: 0;
-        margin-top: 23px;
-    }
-
-    &__info {
-        .set-font(12px, 16px, Arial);
-        margin: 0;
-        margin-top: 8px;
-        margin-bottom: 21px;
-        color: @concept-color;
-    }
-
-    &__button {
-        background-color: @facility-background;
-        color: @concept-color;
-
-    }
 }
