@@ -4,22 +4,16 @@
   align-items: center;
 }
 
-.program {
-  width: 280px;
-  height: 40px;
-  background-color: @choose-program-color;
-  color: @white-color;
+@media(min-width: 500px) {
+  .nutrition {
+    align-items: flex-start;
+    margin-left: 117px;
+    position: relative;
+  }
 }
 
-.program__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 40px;
-  text-align: center;
-  .set-font(14px, 18px);
-  text-transform: uppercase;
-  color: @white-color;
-  text-decoration: none;
+@media(min-width: 1300px) {
+  .nutrition {
+    margin-left: 100px;
+  }
 }

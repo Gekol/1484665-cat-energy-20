@@ -23,3 +23,32 @@
   background-color: @facility-background;
   color: @concept-color;
 }
+
+@media(min-width:768px) {
+  .show-more {
+    background-color: @white-color;
+    border: 2px solid @facility-background;
+    text-align: center;
+  }
+
+  .show-more__title {
+    width: 134px;
+    .set-font(20px, 22px);
+    margin: 0;
+  }
+
+  .show-more__info {
+    width: 167px;
+    .set-font(16px, 18px);
+    margin-top: 23px;
+  }
+
+  .show-more__image {
+    width: 60px;
+    height: 60px;
+  }
+
+  .show-more__button {
+    margin-top: auto;
+  }
+}

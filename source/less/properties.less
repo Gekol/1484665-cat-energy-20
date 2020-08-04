@@ -5,9 +5,34 @@
 }
 
 .properties__weight {
-  .set-font(14px, 16px);
+  .set-font(14px, 16px, Arial);
 }
 
 .properties__price {
-  .set-font(14px, 14px);
+  .set-font(14px, 14px, Arial);
+}
+
+@media (min-width: 768px) {
+
+  .properties__weight {
+    margin-right: 51px;
+    .set-font(16px, 20px, Arial);
+  }
+
+  .properties__price {
+    .set-font(16px, 20px, Arial);
+    min-width: 43px;
+    text-align: right;
+  }
+}
+
+@media(min-width: 1300px) {
+  .properties {
+    flex-grow: 1;
+    margin-right: 40px;
+  }
+
+  .properties__weight {
+    margin: 0 auto;
+  }
 }

@@ -6,15 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Catalog</title>
   <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body class="main-page">
-  <header class="page-element page-header">
-    <a href="index.html" class="title">
+  <header class="page-header page-element">
+    <a href="index.html" class="title-mobile">
       <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
     </a>
-    <a href="index.html">
+    <a href="index.html" class="title-mobile">
       <img src="img/logo-2.svg" class="title__text" width="101px" height="18px" alt="Cat energy">
+    </a>
+    <a href="index.html" class="title-desktop">
+      <img src="img/logo-desktop.svg" width="174px" height="50px" alt="Cat energy">
     </a>
     <div class="burger-menu">
       <div class="burger-menu__layer first"></div>
@@ -33,17 +37,16 @@
       </li>
     </ul>
   </header>
-  <main class="page-element">
-    <section class="food">
+  <main class="main-content page-element">
+    <section class="food main-content__element">
       <h1 class="food__title">Каталог продукции</h1>
       <ul class="food__list">
         <li class="food__item">
-          <div class="food__info">
-            <img src="img/hen-500.png" alt="Hen 500g" width="140px" height="112px" class="food_image">
+          <div class="food__info food__info__hen-500">
             <div class="food__description">
               <h4 class="food__type">Cat Energy PRO 500 г</h4>
               <div class="food-detail">
-                <span>Объём</span>
+                <span>Масса</span>
                 <span>500 г</span>
               </div>
               <div class="food-detail">
@@ -59,12 +62,11 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info">
-            <img src="img/hen-1000.png" alt="Hen 1000g" width="140px" height="112px" class="food_image">
+          <div class="food__info food__info__hen-1000">
             <div class="food__description">
               <h4 class="food__type">Cat Energy PRO 1000 г</h4>
               <div class="food-detail">
-                <span>Объём</span>
+                <span>Масса</span>
                 <span>1000 г</span>
               </div>
               <div class="food-detail">
@@ -80,12 +82,11 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info">
-            <img src="img/fish-500.png" alt="Fish 500g" width="140px" height="112px" class="food_image">
+          <div class="food__info food__info__fish-500">
             <div class="food__description">
               <h4 class="food__type">Cat Energy PRO 500 г</h4>
               <div class="food-detail">
-                <span>Объём</span>
+                <span>Масса</span>
                 <span>500 г</span>
               </div>
               <div class="food-detail">
@@ -101,12 +102,11 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info">
-            <img src="img/fish-1000.png" alt="Fish 1000g" width="140px" height="112px" class="food_image">
+          <div class="food__info food__info__fish-1000">
             <div class="food__description">
               <h4 class="food__type">Cat Energy PRO 1000 г</h4>
               <div class="food-detail">
-                <span>Объём</span>
+                <span>Масса</span>
                 <span>1000 г</span>
               </div>
               <div class="food-detail">
@@ -122,12 +122,11 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info">
-            <img src="img/buckwheat-500.png" alt="Buckwheat 500g" width="140px" height="112px" class="food_image">
+          <div class="food__info food__info__buckwheat-500">
             <div class="food__description">
               <h4 class="food__type">Cat Energy SLIM 500 г</h4>
               <div class="food-detail">
-                <span>Объём</span>
+                <span>Масса</span>
                 <span>500 г</span>
               </div>
               <div class="food-detail">
@@ -143,12 +142,11 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info">
-            <img src="img/buckwheat-1000.png" alt="Buckwheat 1000g" width="140px" height="112px" class="food_image">
+          <div class="food__info food__info__buckwheat-1000">
             <div class="food__description">
               <h4 class="food__type">Cat Energy SLIM 1000 г</h4>
               <div class="food-detail">
-                <span>Объём</span>
+                <span>Масса</span>
                 <span>1000 г</span>
               </div>
               <div class="food-detail">
@@ -164,12 +162,11 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info">
-            <img src="img/rice.png" alt="Rice 500g" width="140px" height="112px" class="food_image">
+          <div class="food__info food__info__rice">
             <div class="food__description">
               <h4 class="food__type">Cat Energy SLIM 500 г</h4>
               <div class="food-detail">
-                <span>Объём</span>
+                <span>Масса</span>
                 <span>500 г</span>
               </div>
               <div class="food-detail">
@@ -185,70 +182,87 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item show-more">
-          <img src="img/plus.png" alt="plus" width="30px" height="30px">
-          <p class="show-more__title">Показать еще 100500 товаров</p>
-          <p class="show-more__info">На самом деле вкусов гораздо больше!</p>
-          <button class="order-button show-more__button">Показать все</button>
+          <div class="food__info food__info__plus">
+            <p class="show-more__title">Показать еще 100500 товаров</p>
+            <p class="show-more__info">На самом деле вкусов гораздо больше!</p>
+          </div>
+          <button class="food__order-button show-more__button">Показать все</button>
         </li>
       </ul>
     </section>
-    <section class="additional-goods">
+    <section class="additional-goods main-content__element">
       <h2 class="additional-goods__title">Дополнительные товары</h2>
-      <ul class="additional-goods__list">
-        <li class="additional-goods__item">
-          <p class="additional-goods__type">Сахарозаменитель</p>
-          <div class="properties">
-            <span class="properties__weight">1 упаковка (100 г)</span>
-            <span class="properties__price">200 Р.</span>
-          </div>
-          <button class="order-button">Заказать</button>
-        </li>
-        <li class="additional-goods__item">
-          <p class="additional-goods__type">Питьевая вода</p>
-          <div class="properties">
-            <span class="properties__weight">5 литров</span>
-            <span class="properties__price">50 Р.</span>
-          </div>
-          <button class="order-button">Заказать</button>
-        </li>
-        <li class="additional-goods__item">
-          <p class="additional-goods__type">Молоко</p>
-          <div class="properties">
-            <span class="properties__weight">1 литр</span>
-            <span class="properties__price">100 Р.</span>
-          </div>
-          <button class="order-button">Заказать</button>
-        </li>
-        <li class="additional-goods__item">
-          <p class="additional-goods__type">Витамины</p>
-          <div class="properties">
-            <span class="properties__weight">1 упаковка (30 г)</span>
-            <span class="properties__price">300 Р.</span>
-          </div>
-          <button class="order-button">Заказать</button>
-        </li>
-      </ul>
-      <div class="gift">
-        <img src="img/icon-gift.png" alt="Gift" width="78px" height="80px" class="gift__image">
-        <p class="gift__info">Закажите все<br> и получите чехол для кота в подарок!</p>
+      <div class="additional-goods-block">
+        <ul class="additional-goods__list">
+          <li class="additional-goods__item">
+            <div class="additional-goods__item-block">
+              <p class="additional-goods__type">Сахарозаменитель</p>
+              <div class="properties">
+                <span class="properties__weight">1 упаковка (100 г)</span>
+                <span class="properties__price">200 Р</span>
+              </div>
+            </div>
+            <button class="food__order-button additional-order-button">Заказать</button>
+          </li>
+          <li class="additional-goods__item">
+            <div class="additional-goods__item-block">
+              <p class="additional-goods__type">Питьевая вода</p>
+              <div class="properties">
+                <span class="properties__weight">5 литров</span>
+                <span class="properties__price">50 Р</span>
+              </div>
+            </div>
+            <button class="food__order-button additional-order-button">Заказать</button>
+          </li>
+          <li class="additional-goods__item">
+            <div class="additional-goods__item-block">
+              <p class="additional-goods__type">Молоко</p>
+              <div class="properties">
+                <span class="properties__weight">1 литр</span>
+                <span class="properties__price">100 Р</span>
+              </div>
+            </div>
+            <button class="food__order-button additional-order-button">Заказать</button>
+          </li>
+          <li class="additional-goods__item">
+            <div class="additional-goods__item-block">
+              <p class="additional-goods__type">Витамины</p>
+              <div class="properties">
+                <span class="properties__weight">1 упаковка (30 г)</span>
+                <span class="properties__price">300 Р</span>
+              </div>
+            </div>
+            <button class="food__order-button additional-order-button">Заказать</button>
+          </li>
+        </ul>
+        <div class="gift">
+          <img src="img/icon-gift.png" alt="Gift" width="78px" height="80px" class="gift__image">
+          <p class="gift__info">Закажите все<br> и получите чехол для кота в подарок!</p>
+        </div>
       </div>
+      
     </section>
   </main>
-  <footer class="page-element footer-links">
+  <footer class="footer-links page-element">
     <div class="contacts contacts__brown">
       <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="contacts__block">
+        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+        <p class="contacts__city">Санкт-Петербург</p>
+      </div>
     </div>
-    <img src="img/location.png" alt="location">
+    <img src="img/location.jpg" alt="location" class="footer-links__map__mobile" width="100%" height="362px">
+    <img src="img/location-tablet.jpg" alt="location" class="footer-links__map__tablet" width="100%" height="400px">
+    <img src="img/map-desktop.png" alt="location" class="footer-links__map__desktop" width="100%" height="400px" />
     <div class="links">
       <div class="logo links-block">
-        <img src="img/logo-2.svg" alt="Cat energy" width="128px" height="24px">
+        <img src="img/logo-2.svg" alt="Cat energy" class="footer-links__map" width="128px" height="24px">
       </div>
       <div class="networks links-block">
         <ul class="networks-list">
-          <li class="networks__item vk"></li>
-          <li class="networks__item insta"></li>
-          <li class="networks__item facebook"></li>
+          <li><a href="https://vk.com/" class="networks__item networks__item__vk"></a></li>
+          <li><a href="https://www.instagram.com/" class="networks__item networks__item__insta"></a></li>
+          <li><a href="https://www.facebook.com/" class="networks__item networks__item__facebook"></a></li>
         </ul>
       </div>
       <div class="htmlacademy links-block">
@@ -263,4 +277,5 @@
     </div>
   </footer>
 </body>
+
 </html>

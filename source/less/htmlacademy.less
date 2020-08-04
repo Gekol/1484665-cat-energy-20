@@ -1,0 +1,23 @@
+.htmlacademy {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 0;
+  align-items: center;
+  .set-font(16px, 18px, Arial);
+}
+
+.htmlacademy__link {
+  color: @concept-color;
+  text-decoration: none;
+}
+
+@media(min-width: 768px) {
+  .htmlacademy {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .htmlacademy__link {
+    margin-right: 22px;
+  }
+}

@@ -1,28 +1,35 @@
-.program-form {
-  padding-left: 20px;
+.program-form__element() {
+  padding-left: 19px;
+  padding-right: 20px;
 }
 
 .program-form__section {
   border: none;
-  padding: 0;
-  padding-bottom: 26px;
+  padding-bottom: 3px;
   padding-top: 20px;
   margin: 0;
+  .program-form__element();
 
-  &:not(:last-of-type) {
-    border-bottom: 1px solid @footer-block-border-color;
-  }
+}
+
+.program-form__section__personal-info {
+  padding-bottom: 8px;
+  border-bottom: 1px solid @footer-block-border-color;
 }
 
 .program-form__block {
   display: flex;
   align-items: center;
-  margin-bottom: 13px;
   justify-content: space-between;
+  position: relative;
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
 }
 
 .program-form__title {
   .set-font(36px, 36px);
+  .program-form__element();
   margin-top: 27px;
   margin-bottom: 37px;
   position: relative;
@@ -31,16 +38,39 @@
 
 .program-form__subtitle {
   .set-font(14px, 18px);
+  .program-form__element();
   font-weight: normal;
   text-transform: uppercase;
   width: 226px;
-  margin-bottom: 39px;
+  margin-bottom: 19px;
 }
 
 .program-form__label {
   .set-font(16px, 18px);
   text-transform: uppercase;
   margin-right: 14px;
+}
+
+.program-form__label__email::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 14px;
+  background-image: url("../img/icon-email.svg");
+  position: absolute;
+  right: 15px;
+  top: 16px;
+}
+
+.program-form__label__phone::after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/icon-phone.svg");
+  position: absolute;
+  right: 12px;
+  top: 13px;
 }
 
 .program-form__input {
@@ -50,26 +80,135 @@
   padding-left: 15px;
   text-transform: uppercase;
   flex-grow: 1;
+  border: 1px solid @input-border-color;
 }
 
 .program-form__aim {
   flex-grow: 1;
+  margin-left: 46px;
+  position: relative;
+  margin-top: 7px;
+
+  &:not(:last-child) {
+    margin-bottom: 19px;
+  }
 }
 
 .program-form__submit {
-  width: 100%;
+  min-width: calc(100% - 40px);
   height: 40px;
   .set-font(16px, 16px);
   color: @white-color;
   background-color: @choose-program-color;
   text-transform: uppercase;
   box-sizing: border-box;
+  margin-left: 19px;
+  margin-right: 20px;
   margin-bottom: 21px;
-  padding: 6px 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .program-form__required_info {
   text-align: center;
   margin: 0;
   margin-bottom: 32px;
+}
+
+.program-form__section__aim-info {
+  border-bottom: 1px solid @input-border-color;
+}
+
+@media(min-width: 768px) {
+  .program-form__aim {
+    margin-left: 70px;
+  }
+
+  .program-form__title {
+    .set-font(60px, 60px);
+    margin-bottom: 54px;
+  }
+
+  .program-form__subtitle {
+    .set-font(20px, 30px);
+    padding: 0 70px;
+    width: 323px;
+  }
+
+  .program-form__label {
+    .set-font(20px, 30px);
+    margin-top: 0;
+  }
+
+  .program-form__input {
+    .set-font(20px, 30px);
+  }
+
+  .program-form__block:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .program-form__section {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 71px;
+    margin-right: 67px;
+  }
+
+  .program-form__section__personal-info {
+    padding-bottom: 51px;
+  }
+
+  .program-form__section__aim-info {
+    border: 1px solid @input-border-color;
+    border-top: none;
+    box-sizing: border-box;
+    padding: 25px 28px;
+    margin-bottom: 71px;
+  }
+
+  .program-form__submit-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .program-form__submit {
+    margin-top: 34px;
+    margin-left: 0;
+    margin-bottom: 72px;
+    min-width: 282px;
+    height: 52px;
+  }
+
+  .program-form__required_info {
+    margin-right: 120px;
+  }
+}
+
+@media(min-width: 1300px) {
+
+  .program-form__section__personal-info {
+    border: none;
+    min-width: 569px;
+  }
+
+  .program-form__section__aim-info {
+    margin-top: 20px;
+    margin-bottom: 45px;
+    border: 1px solid @input-border-color;
+  }
+  
+  .program-form__block {
+    max-width: 569px;
+  }
+
+  .program-form__submit {
+    min-width: 568px;
+  }
+
+  .program-form__required_info {
+    margin-right: auto;
+    margin-left: 81px;
+  }
 }
