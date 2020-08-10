@@ -27,6 +27,7 @@
 .food__info {
   display: flex;
   align-items: center;
+
   &::before {
     content: "";
     display: block;
@@ -65,6 +66,7 @@
 
 .food__info__plus {
   flex-direction: column;
+
   &::before {
     width: 30px;
     height: 30px;
@@ -105,7 +107,7 @@
   padding: 6px 0;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .food__title {
     .set-font(60px, 60px);
     padding-bottom: 0;
@@ -132,6 +134,7 @@
     flex-direction: column;
     position: relative;
     padding-top: 200px;
+
     &::before {
       content: "";
       display: block;
@@ -209,8 +212,7 @@
   }
 }
 
-@media(min-width: 1300px) {
-
+@media (min-width: 1300px) {
   .food__list {
     margin-left: -80px;
     justify-content: normal;
