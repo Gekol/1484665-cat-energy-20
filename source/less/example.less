@@ -1,21 +1,118 @@
 .example {
+  display: flex;
+  flex-direction: column;
   background-color: @example-background-color;
   padding-right: 21px;
   padding-left: 20px;
+  padding-top: 27px;
 }
 
 .example__title {
   .set-font(36px, 40px);
-  margin: 27px 0 33px;
+  margin: 0 0 33px;
+  font-weight: normal;
 }
 
 .example__info {
   .set-font(14px, 18px, Arial);
   color: @concept-color;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
-.example-expenses {
+.example-expenses-mobile {
   text-align: center;
   .set-font(14px, 20px);
   text-transform: uppercase;
+  margin: 26px 0 42px;
+}
+
+.example-expenses-tablet {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .example {
+    .set-font(16px, 24px);
+    padding: 43px 30px 0;
+    background-color: @white-color;
+  }
+
+  .example__title {
+    .set-font(60px, 60px);
+  }
+
+  .example__info {
+    .set-font(16px, 24px, Arial);
+    margin-bottom: 54px;
+  }
+
+  .example-expenses-mobile {
+    display: none;
+  }
+
+  .example-expenses-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    .set-font(20px, 20px);
+    text-transform: uppercase;
+  }
+
+  .example-expenses-tablet__info {
+    margin: 0;
+  }
+
+  .example-expenses-tablet__price {
+    margin: 0;
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .example {
+    display: grid;
+    grid-template-columns: 1fr 1300px 1fr;
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding: 0 0 75px;
+    box-sizing: border-box;
+    background-color: @facility-background;
+    position: relative;
+  }
+
+  .example__title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 0 40px 76px;
+  }
+
+  .example__title-block {
+    display: grid;
+    grid-template-columns: 1fr 1300px 1fr;
+    background-color: @white-color;
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  .example__info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-top: 70px;
+    width: 436px;
+    padding-left: 40px;
+  }
+
+  .example-expenses-tablet {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    align-items: center;
+  }
+
+  .example-expenses-tablet__price {
+    margin: 0;
+  }
 }

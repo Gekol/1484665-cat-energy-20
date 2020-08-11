@@ -1,0 +1,16 @@
+.selected {
+  width: 35px;
+  height: 6px;
+  background-color: @choose-program-color;
+  .bar-properties();
+  position: relative;
+  top: 3px;
+  left: 6px;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .selected {
+    display: none;
+  }
+}

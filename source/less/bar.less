@@ -4,7 +4,7 @@
   align-items: center;
   color: @black-color;
   text-transform: uppercase;
-  padding: 17px 0 30px;
+  padding: 23px 0 25px;
   .set-font(16px, 20px);
 }
 
@@ -20,15 +20,24 @@
   background-color: @white-color;
   .bar-properties();
   margin: 0 12px;
+  position: relative;
 }
 
-.selected {
-  width: 35px;
-  height: 6px;
-  background-color: @choose-program-color;
-  .bar-properties();
-  position: relative;
-  top: 3px;
-  left: 6px;
-  cursor: pointer;
+@media (min-width: 768px) {
+  .bar-block {
+    width: 428px;
+    height: 6px;
+    background-color: @bar-background-tablet;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    position: absolute;
+    left: 650px;
+    bottom: 118px;
+    .set-font(20px, 30px);
+  }
 }

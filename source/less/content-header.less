@@ -1,0 +1,67 @@
+.content-header {
+  background: url("../img/index-background-mobile.jpg") no-repeat;
+  background-position: top;
+  background-size: 100%;
+  text-align: center;
+  padding-top: 27px;
+  color: @white-color;
+  margin: 0;
+}
+
+.content-header__title {
+  .set-font(36px, 36px);
+  margin: 0 35px;
+  margin-bottom: 25px;
+  font-weight: normal;
+}
+
+.content-header__subtitle {
+  .set-font(14px, 14px);
+  margin: 0;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+@media (min-width: 768px) {
+  .content-header {
+    text-align: left;
+    background: none;
+    color: @black-color;
+    width: 100%;
+  }
+
+  .content-header__title {
+    .set-font(60px, 60px);
+    width: 414px;
+    margin: 0;
+    margin-bottom: 41px;
+  }
+
+  .content-header__subtitle {
+    .set-font(20px, 20px);
+  }
+
+  .content-header__image {
+    width: 709px;
+    min-height: 609px;
+    position: relative;
+    bottom: 20px;
+    right: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .content-header {
+    min-height: 606px;
+  }
+
+  .content-header__image {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    right: 250px;
+    top: 50%;
+    margin-top: -280px;
+  }
+}

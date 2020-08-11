@@ -1,0 +1,20 @@
+.radio-button-block {
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid @bar-border-color;
+    position: absolute;
+  }
+}
+
+@media (min-width: 768px) {
+  .radio-button-block {
+    &::before {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

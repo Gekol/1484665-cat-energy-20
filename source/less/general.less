@@ -5,11 +5,22 @@
 .main-page {
   margin: 0;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 320px 1fr;
 }
 
 .page-element {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  min-width: 250px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+@media (min-width: 1440px) {
+  .main-page {
+    display: grid;
+    grid-template-columns: 1fr 1440px 1fr;
+  }
+
+  .page-element {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }

@@ -1,5 +1,6 @@
 .form-section__subtitle {
   position: relative;
+  display: inline-block;
   .set-font(24px, 26px);
   font-weight: normal;
   margin: 27px 0 32px;
@@ -11,28 +12,41 @@
   &::after {
     content: "";
     position: absolute;
-    display: block;
+    top: 20px;
+    left: calc(100% + 22px);
+    width: 100vw;
     height: 3px;
     background-color: @choose-program-color;
-    right: 0;
-    top: 12px;
-    margin-bottom: -2px;
+    display: block;
   }
 }
 
 .form-section__comment-text {
   .set-font(16px, 18px);
   text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid @input-border-color;
+  padding: 10px 19px;
+  margin-top: 2px;
 }
 
-.master-title::after {
-  width: 99px;
-}
+@media (min-width: 768px) {
+  .form-section__subtitle {
+    .set-font(36px, 36px);
+    margin-bottom: 76px;
+    margin-top: 65px;
 
-.comment-title::after {
-  width: 158px;
-}
-
-.additional-title::after {
-  width: 136px;
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 3px;
+      background-color: @choose-program-color;
+      right: calc(100% + 40px);
+      top: 20px;
+      margin-bottom: -2px;
+      width: 100vh;
+    }
+  }
 }
