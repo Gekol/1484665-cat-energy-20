@@ -48,6 +48,7 @@
   .set-font(16px, 18px);
   text-transform: uppercase;
   margin-right: 14px;
+  color: @concept-color;
 }
 
 .program-form__label__email::after {
@@ -78,6 +79,7 @@
   .set-font(16px, 18px);
   padding-left: 15px;
   text-transform: uppercase;
+  color: @concept-color;
   flex-grow: 1;
   border: 1px solid @input-border-color;
 }
@@ -185,13 +187,31 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1440px) {
+
+  .program-form {
+    padding-right: 110px;
+  }
+
+  .program-form__title {
+    padding: 0;
+  }
+
+  .program-form__subtitle {
+    padding: 0;
+  }
+
+  .program-form__section {
+    margin-left: 0;
+  }
+
   .program-form__section__personal-info {
     border: none;
     min-width: 569px;
   }
 
   .program-form__section__aim-info {
+    flex-grow: 2;
     margin-top: 20px;
     margin-bottom: 45px;
     border: 1px solid @input-border-color;

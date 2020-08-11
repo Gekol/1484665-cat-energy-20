@@ -66,7 +66,7 @@
   background-image: url("../img/cat-back1.svg");
 }
 
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .facility {
     min-height: 372px;
   }
@@ -116,10 +116,14 @@
   }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1440px) {
   .facility {
     max-width: 570px;
     box-sizing: border-box;
+
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
   }
 
   .facility__title {
