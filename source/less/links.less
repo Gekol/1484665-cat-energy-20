@@ -1,11 +1,17 @@
 .links {
   background-color: @facility-background;
   width: 100%;
-  box-sizing: border-box;
   padding: 0 20px;
+  display: flex;
+}
+
+.links-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 281px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .links-block {
@@ -20,13 +26,16 @@
 }
 
 @media (min-width: 768px) {
-  .links {
+  .links-container {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0 30px;
+    width: 708px;
   }
 
   .links-block {
+
+    width: fit-content;
+
     &:not(:last-child) {
       border: none;
     }
@@ -34,5 +43,7 @@
 }
 
 @media (min-width: 1440px) {
-  padding: 0 40px;
+  .links-container {
+    width: 1220px;
+  }
 }
