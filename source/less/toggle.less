@@ -5,14 +5,35 @@
 @media (min-width: 768px) {
   .toggle {
     display: block;
-    width: 8px;
-    height: 8px;
+    width: 34px;
+    height: 34px;
     border-radius: 50%;
-    background-color: @choose-program-color;
-    position: absolute;
+    background-color: @white-color;
+    position: relative;
     left: 50%;
-    border: 15px solid @white-color;
+    border: 1px solid @bar-border-color;
     filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
     top: -15px;
+
+    &:hover {
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+    }
+
+    &:active {
+      filter: drop-shadow(0px 3px 5px rgba(0, 0, 0, 0.2));
+      border-color: @choose-program-color;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: @choose-program-color;
+      border-radius: 50%;
+      left: calc(50% - 4px);
+      top: calc(50% - 4px);
+    }
   }
 }

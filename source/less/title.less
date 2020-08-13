@@ -2,6 +2,10 @@
   display: block;
 }
 
+.title__text {
+  margin-top: 6px;
+}
+
 .title-desktop {
   display: none;
 }
@@ -13,5 +17,13 @@
 
   .title-desktop {
     display: block;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 }

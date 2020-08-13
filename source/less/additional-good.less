@@ -8,6 +8,14 @@
     height: 40px;
     border: 1px solid @bar-border-color;
   }
+
+  &:hover::before {
+    border-color: @bar-border-color-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .additional-good__label {

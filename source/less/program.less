@@ -1,6 +1,11 @@
 .program {
   width: calc(100% - 40px);
+  background-color: @choose-program-color;
   margin: 0 20px;
+
+  &:hover {
+    background-color: @choose-program-color-hover;
+  }
 }
 
 .program__link {
@@ -10,11 +15,14 @@
   width: 100%;
   height: 40px;
   text-align: center;
-  background-color: @choose-program-color;
   color: @white-color;
   .set-font(14px, 18px);
   text-transform: uppercase;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: 768px) {
@@ -28,5 +36,12 @@
   .program__link {
     box-sizing: border-box;
     padding: 14px 26px;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .program {
+    top: 344px;
   }
 }

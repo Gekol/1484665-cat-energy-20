@@ -1,3 +1,45 @@
+.contact-data__block__email {
+
+  &::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 14px;
+    background-image: url("../img/icon-email.svg");
+    position: absolute;
+    right: 15px;
+    top: 16px;
+  }
+
+  &:active::after, &:focus-within::after {
+    background-image: url("../img/icon-email-green.svg");
+  }
+
+  &__error::after {
+    background-image: url("../img/icon-email-red.svg");
+  }
+
+}
+
+.contact-data__block__phone {
+
+  &::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url("../img/icon-phone.svg");
+    position: absolute;
+    right: 12px;
+    top: 13px;
+  }
+
+  &:active::after, &:focus-within::after {
+    background-image: url("../img/icon-phone-green.svg");
+  }
+
+}
+
 @media (min-width: 1440px) {
   .contact-data {
     display: flex;
