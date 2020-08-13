@@ -8,7 +8,6 @@
   .nutrition {
     align-items: flex-start;
     margin-left: 117px;
-    position: relative;
   }
 }
 
@@ -16,11 +15,19 @@
   .nutrition {
     grid-column-start: 1;
     grid-column-end: -1;
-    margin-left: 0;
     padding-left: 190px;
-    background-image: url("../img/index-background-desktop.jpg");
-    background-repeat: no-repeat;
-    background-position: 100% -107px;
-    background-size: 50%;
+    margin-left: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50%;
+      height: 696px;
+      background-image: url("../img/index-background-desktop.jpg");
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
   }
 }
