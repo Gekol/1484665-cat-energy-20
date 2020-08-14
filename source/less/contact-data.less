@@ -1,5 +1,4 @@
 .contact-data__block__email {
-
   &::after {
     content: "";
     display: block;
@@ -11,18 +10,17 @@
     top: 16px;
   }
 
-  &:active::after, &:focus-within::after {
+  &:active::after,
+  &:focus-within::after {
     background-image: url("../img/icon-email-green.svg");
   }
 
   &__error::after {
     background-image: url("../img/icon-email-red.svg");
   }
-
 }
 
 .contact-data__block__phone {
-
   &::after {
     content: "";
     display: block;
@@ -34,10 +32,10 @@
     top: 13px;
   }
 
-  &:active::after, &:focus-within::after {
+  &:active::after,
+  &:focus-within::after {
     background-image: url("../img/icon-phone-green.svg");
   }
-
 }
 
 @media (min-width: 1440px) {
