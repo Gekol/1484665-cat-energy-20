@@ -8,12 +8,26 @@
   .nutrition {
     align-items: flex-start;
     margin-left: 117px;
-    position: relative;
   }
 }
 
 @media (min-width: 1440px) {
   .nutrition {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    padding-left: 190px;
     margin-left: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 50%;
+      height: 696px;
+      background-image: url("../img/index-background-desktop.jpg");
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
   }
 }
