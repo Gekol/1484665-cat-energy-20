@@ -122,8 +122,10 @@
 
 @media (min-width: 1440px) {
   .facility {
-    max-width: 570px;
+    min-width: 570px;
+    width: calc(50% - 40px);
     box-sizing: border-box;
+    margin: 0;
 
     &:not(:last-child) {
       margin-right: 80px;
