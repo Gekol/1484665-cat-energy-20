@@ -72,10 +72,6 @@
 
 @media (min-width: 1440px) {
   .example {
-    display: grid;
-    grid-template-columns: 1fr 1300px 1fr;
-    grid-column-start: 1;
-    grid-column-end: -1;
     padding: 0 0 75px;
     box-sizing: border-box;
     background-color: @facility-background;
@@ -83,25 +79,17 @@
   }
 
   .example__title {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    padding: 0 40px 76px;
+    padding: 0 110px 76px;
   }
 
   .example__title-block {
-    display: grid;
-    grid-template-columns: 1fr 1300px 1fr;
     background-color: @white-color;
-    grid-column-start: 1;
-    grid-column-end: -1;
   }
 
   .example__info {
-    grid-column-start: 2;
-    grid-column-end: 3;
     padding-top: 70px;
     width: 436px;
-    padding-left: 40px;
+    padding-left: 110px;
   }
 
   .example-expenses-tablet {
