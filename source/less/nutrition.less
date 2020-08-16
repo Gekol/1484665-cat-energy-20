@@ -1,4 +1,6 @@
 .nutrition {
+  grid-column-start: 1;
+  grid-column-end: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +9,9 @@
 @media (min-width: 768px) {
   .nutrition {
     align-items: flex-start;
-    margin-left: 117px;
+    margin-left: 87px;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
 

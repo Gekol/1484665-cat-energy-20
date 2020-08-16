@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
   background-color: @example-background-color;
-  padding-right: 21px;
-  padding-left: 20px;
+  padding-top: 27px;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  padding: 0 20px;
+}
+
+.example__title-block {
   padding-top: 27px;
 }
 
@@ -34,8 +39,14 @@
 @media (min-width: 768px) {
   .example {
     .set-font(16px, 24px);
-    padding: 43px 30px 0;
+    border-top: 1px solid @block-border-color;
+    padding-top: 43px;
+    padding: 0 30px;
     background-color: @white-color;
+  }
+
+  .example__title-block {
+    padding-top: 43px;
   }
 
   .example__title {
@@ -58,6 +69,7 @@
     margin-left: auto;
     .set-font(20px, 20px);
     text-transform: uppercase;
+    text-align: end;
   }
 
   .example-expenses-tablet__info {
@@ -76,6 +88,7 @@
     box-sizing: border-box;
     background-color: @facility-background;
     position: relative;
+    border: none;
   }
 
   .example__title {

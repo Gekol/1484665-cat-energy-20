@@ -1,4 +1,6 @@
 .page-header {
+  grid-column-start: 1;
+  grid-column-end: -1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +10,8 @@
 
 @media (min-width: 768px) {
   .page-header {
+    grid-column-start: 2;
+    grid-column-end: 3;
     border: none;
     margin-top: 24px;
   }
