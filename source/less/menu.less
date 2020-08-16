@@ -21,11 +21,12 @@
   align-items: center;
   justify-content: center;
   height: 66px;
+  box-sizing: border-box;
 
   &:first-child {
-    margin-left: 20px;
-    margin-right: 23px;
-    justify-content: space-around;
+    padding-left: 20px;
+    padding-right: 23px;
+    justify-content: space-between;
   }
 
   &:not(:last-child) {
@@ -43,15 +44,11 @@
     &:first-child {
       margin: 0;
       margin-right: auto;
-      margin-left: 30px;
+      padding: 0;
     }
 
     &:not(:last-child) {
       border: none;
-    }
-
-    &:last-child {
-      margin-right: 29px;
     }
 
     &:hover {

@@ -1,14 +1,12 @@
-.program-form__element() {
-  padding-left: 19px;
-  padding-right: 20px;
+.program-form {
+  grid-column-start: 1;
+  grid-column-end: -1;
 }
 
 .program-form__section {
   border: none;
-  padding-bottom: 22px;
-  padding-top: 20px;
+  padding: 22px 20px 20px;
   margin: 0;
-  .program-form__element();
 }
 
 .program-form__section__personal-info {
@@ -28,19 +26,19 @@
 
 .program-form__title {
   .set-font(36px, 36px);
-  .program-form__element();
   margin-top: 27px;
   margin-bottom: 37px;
   position: relative;
   font-weight: normal;
+  padding: 0 20px;
 }
 
 .program-form__subtitle {
   .set-font(14px, 18px);
-  .program-form__element();
   font-weight: normal;
   text-transform: uppercase;
   width: 226px;
+  padding: 0 20px;
   margin-bottom: 19px;
 }
 
@@ -183,7 +181,8 @@
 
 @media (min-width: 1440px) {
   .program-form {
-    padding-right: 110px;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 
   .program-form__title {
@@ -208,10 +207,6 @@
     margin-top: 20px;
     margin-bottom: 45px;
     border: 1px solid @input-border-color;
-  }
-
-  .program-form__block {
-    max-width: 569px;
   }
 
   .program-form__submit {
