@@ -8,12 +8,14 @@
       position: absolute;
       height: 2px;
       width: 100%;
-      background-color: @white-color;
+      background-color: @choose-program-color;
       bottom: -8px;
     }
+  }
+}
 
-    &:not(:nth-child(2))::after {
-      background-color: @choose-program-color;
-    }
+@media (min-width: 1440px) {
+  .current-page:nth-child(2)::after {
+    background-color: @white-color;
   }
 }

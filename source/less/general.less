@@ -3,20 +3,30 @@
 }
 
 .main-page {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
   margin: 0;
   padding: 0;
 }
 
 .page-element {
+  grid-column-start: 2;
+  grid-column-end: 3;
   min-width: 250px;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
+@media (min-width: 768px) {
+  .main-page {
+    grid-template-columns: 30px 1fr 30px;
+  }
+}
+
 @media (min-width: 1440px) {
   .main-page {
     display: grid;
-    grid-template-columns: 1fr 1440px 1fr;
+    grid-template-columns: 110px 1fr 110px;
   }
 
   .page-element {

@@ -1,5 +1,5 @@
 .additional-goods {
-  padding: 0 20px 35px;
+  padding-bottom: 35px;
 }
 
 .additional-goods__title {
@@ -13,7 +13,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: calc(100% + 22px);
     width: 100vw;
     height: 3px;
@@ -60,12 +60,16 @@
       margin-bottom: -2px;
       width: 100vh;
     }
+
+    &::after {
+      top: 20px;
+    }
   }
 
   .additional-goods {
     display: flex;
     flex-direction: column;
-    padding: 0 30px 76px;
+    padding-bottom: 76px;
   }
 
   .additional-goods__list {
@@ -89,14 +93,17 @@
 }
 
 @media (min-width: 1440px) {
-  .additional-goods {
-    padding-left: 73px;
+  .additional-goods__list {
+    flex-grow: 1;
+    margin: 0;
   }
 
-  .additional-goods__list {
-    min-width: 896px;
-    padding-left: 37px;
-    margin: 0;
+  .additional-goods__title {
+    padding-left: 0;
+
+    &::before {
+      right: calc(100% + 40px);
+    }
   }
 
   .additional-goods__item {
