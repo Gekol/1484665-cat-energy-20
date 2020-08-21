@@ -29,13 +29,20 @@
     height: 6px;
     background-color: @bar-background-tablet;
   }
+
+  .bar {
+    background-color: @example-background-color;
+    .set-font(20px, 30px);
+    padding-bottom: 67px;
+  }
 }
 
 @media (min-width: 1440px) {
   .bar {
+    background-color: unset;
     position: absolute;
     right: 175px;
-    bottom: 118px;
+    bottom: 0;
     .set-font(20px, 30px);
   }
 }

@@ -12,13 +12,17 @@
   &::after {
     content: "";
     position: absolute;
-    top: 20px;
+    top: 15px;
     left: calc(100% + 22px);
     width: 100vw;
     height: 3px;
     background-color: @choose-program-color;
     display: block;
   }
+}
+
+.form-section__subtitle__master-title {
+  max-width: 187px;
 }
 
 .form-section__comment-text {
@@ -36,6 +40,7 @@
     .set-font(36px, 36px);
     margin-bottom: 76px;
     margin-top: 65px;
+    max-width: unset;
 
     &::before {
       content: "";
@@ -47,6 +52,10 @@
       top: 20px;
       margin-bottom: -2px;
       width: 100vh;
+    }
+
+    &::after {
+      top: 20px;
     }
   }
 }

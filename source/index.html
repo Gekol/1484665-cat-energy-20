@@ -44,7 +44,11 @@
         <h1 class="content-header__title">Функциональное питание для котов</h1>
         <h3 class="content-header__subtitle">Занялся собой? Займись котом!</h3>
         <div class="content-header-image-block">
-          <img src="img/index-can.png" class="content-header__image" alt="Main image" width="280" height="270">
+          <picture class="content-header__image">
+            <source srcset="img/index-can-desktop@2x.png 2x" media="(min-width: 1440px)">
+            <source srcset="img/index-can-tablet@2x.jpg 2x" media="(min-width: 768px)">
+            <img src="img/index-can.png" srcset="img/index-can-mobile@2x.png 2x" alt="MDN">
+          </picture>
         </div>
       </article>
       <div class="program">
@@ -109,8 +113,16 @@
       </div>
       <p class="example-expenses-mobile">Затраты на питание: 15 000 РУБ.</p>
       <div class="cats">
-        <img src="img/before-mobile-1.png" class="cat" alt="Before">
-        <img src="img/after-mobile-1.png" class="cat visually-hidden" alt="After">
+        <picture class="cat cat__before">
+          <source media="(min-width: 1440px)" srcset="img/before-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/before-tablet@2x.png 2x">
+          <img src="img/before-mobile-1.png" srcset="img/before-mobile@2x.png 2x" alt="Before">
+        </picture>
+        <picture class="cat cat__after">
+          <source media="(min-width: 1440px)" srcset="img/after-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/after-tablet@2x.png 2x">
+          <img src="img/after-mobile-1.png" srcset="img/after-mobile@2x.png 2x" alt="After">
+        </picture>
       </div>
       <div class="bar">
         <span class="bar__before">Было</span>
@@ -130,13 +142,15 @@
         <p class="contacts__city">Санкт-Петербург</p>
       </div>
     </div>
-    <img src="img/location.jpg" alt="location" class="footer-links__map__mobile" width="100%" height="362">
-    <img src="img/location-tablet.jpg" alt="location" class="footer-links__map__tablet" width="100%" height="400">
-    <img src="img/map-desktop.png" alt="location" class="footer-links__map__desktop" width="100%" height="400" />
+    <picture class="footer-links-map">
+      <source media="(min-width: 1440px)" srcset="img/location-desktop.png 1x, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/bg-map-tablet@2x.png 2x">
+      <img src="img/location.jpg" srcset="img/bg-map-mobile@2x.png 2x" alt="location" class="footer-links-map__image">
+    </picture>
     <div class="links">
       <div class="links-container">
         <div class="logo links-block">
-          <img src="img/logo-2.svg" alt="Cat energy" width="128" height="24">
+          <img src="img/logo-2.svg" alt="Cat energy" class="footer-links__map" width="128" height="24">
         </div>
         <div class="networks links-block">
           <ul class="networks-list">

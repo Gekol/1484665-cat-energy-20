@@ -252,9 +252,11 @@
         <p class="contacts__city">Санкт-Петербург</p>
       </div>
     </div>
-    <img src="img/location.jpg" alt="location" class="footer-links__map__mobile" width="100%" height="362">
-    <img src="img/location-tablet.jpg" alt="location" class="footer-links__map__tablet" width="100%" height="400">
-    <img src="img/map-desktop.png" alt="location" class="footer-links__map__desktop" width="100%" height="400" />
+    <picture class="footer-links-map">
+      <source media="(min-width: 1440px)" srcset="img/location-map.png 1x, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/bg-map-tablet@2x.png 2x">
+      <img src="img/location.jpg" srcset="img/bg-map-mobile@2x.png 2x" alt="location" class="footer-links-map__image">
+    </picture>
     <div class="links">
       <div class="links-container">
         <div class="logo links-block">

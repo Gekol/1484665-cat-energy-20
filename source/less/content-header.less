@@ -1,11 +1,16 @@
 .content-header {
   background: url("../img/index-background-mobile.jpg") no-repeat;
   background-position: top;
-  background-size: 100%;
+  background-size: 100% 305px;
   text-align: center;
   padding-top: 27px;
   color: @white-color;
   margin: 0;
+
+  @media (min-resolution: 2dppx) {
+    background: url("../img/index-background-mobile@2x.jpg") no-repeat;
+    background-size: 100% 305px;
+  }
 }
 
 .content-header__title {

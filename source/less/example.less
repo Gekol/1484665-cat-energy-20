@@ -29,7 +29,7 @@
   text-align: center;
   .set-font(14px, 20px);
   text-transform: uppercase;
-  margin: 26px 0 42px;
+  margin: 26px 0 38px;
 }
 
 .example-expenses-tablet {
@@ -40,7 +40,7 @@
   .example {
     .set-font(16px, 24px);
     border-top: 1px solid @block-border-color;
-    padding: 0 30px;
+    padding: 0;
     padding-top: 43px;
     background-color: @white-color;
   }
@@ -51,11 +51,13 @@
 
   .example__title {
     .set-font(60px, 60px);
+    padding: 0 30px;
   }
 
   .example__info {
     .set-font(16px, 24px, Arial);
     margin-bottom: 54px;
+    padding: 0 30px;
   }
 
   .example-expenses-mobile {
@@ -84,7 +86,7 @@
 
 @media (min-width: 1440px) {
   .example {
-    padding: 0 0 75px;
+    padding: 0;
     box-sizing: border-box;
     background-color: @facility-background;
     position: relative;
