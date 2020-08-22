@@ -13,14 +13,12 @@
   <header class="page-header page-element">
     <ul class="menu">
       <li class="menu__item">
-        <a href="index.html" class="title-mobile">
-          <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
-        </a>
-        <a href="index.html" class="title-mobile">
-          <img src="img/logo-2.svg" class="title__text" width="101" height="18" alt="Cat energy">
-        </a>
-        <a href="index.html" class="title-desktop">
-          <img src="img/logo-desktop.svg" width="174" height="50" alt="Cat energy">
+        <a href="index.html" class="title">
+          <picture class="title-images">
+            <source srcset="img/logo-desktop.svg 2x" media="(min-width: 768px)">
+            <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
+            <img src="img/logo-2.svg" class="title__text" alt="Cat energy">
+          </picture>
         </a>
         <div class="burger-menu">
           <div class="burger-menu__layer first"></div>
@@ -126,7 +124,7 @@
       </div>
     </div>
     <picture class="footer-links-map">
-      <source media="(min-width: 1440px)" srcset="img/location-map.png 1x, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 1440px)" srcset="img/location-desktop.png 1x, img/bg-map-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/bg-map-tablet@2x.png 2x">
       <img src="img/location.jpg" srcset="img/bg-map-mobile@2x.png 2x" alt="location" class="footer-links-map__image">
     </picture>
