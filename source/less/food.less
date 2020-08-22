@@ -23,6 +23,7 @@
 .food__item {
   display: flex;
   flex-direction: column;
+  position: relative;
   padding-left: 20px;
   padding-right: 18px;
   padding-top: 19px;
@@ -32,41 +33,11 @@
 .food__info {
   display: flex;
   align-items: center;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 140px;
-    height: 112px;
-  }
 }
 
-.food__info__hen-500::before {
-  background-image: url("../img/hen-500.png");
-}
-
-.food__info__hen-1000::before {
-  background-image: url("../img/hen-1000.png");
-}
-
-.food__info__fish-500::before {
-  background-image: url("../img/fish-500.png");
-}
-
-.food__info__fish-1000::before {
-  background-image: url("../img/fish-1000.png");
-}
-
-.food__info__buckwheat-500::before {
-  background-image: url("../img/buckwheat-500.png");
-}
-
-.food__info__buckwheat-1000::before {
-  background-image: url("../img/buckwheat-1000.png");
-}
-
-.food__info__rice::before {
-  background-image: url("../img/rice.png");
+.food__image {
+  position: absolute;
+  top: 0;
 }
 
 .food__info__plus {
@@ -75,13 +46,16 @@
   &::before {
     width: 30px;
     height: 30px;
-    background-image: url("../img/plus.png");
+    background-image: url("../img/plus.svg");
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px 30px;
   }
 }
 
 .food__description {
   flex-grow: 2;
+  padding-left: 140px;
 }
 
 .food__type {
@@ -110,7 +84,7 @@
   background-color: @choose-program-color;
   text-transform: uppercase;
   box-sizing: border-box;
-  margin-top: 13px;
+  margin-top: 25px;
   margin-bottom: 25px;
   padding: 6px 0;
 
@@ -149,51 +123,18 @@
     flex-direction: column;
     position: relative;
     padding-top: 158px;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 168px;
-      height: 200px;
-      position: absolute;
-      top: -80px;
-    }
-  }
-
-  .food__info__hen-500::before {
-    background-image: url("../img/hen-500-desktop.png");
-  }
-
-  .food__info__hen-1000::before {
-    background-image: url("../img/hen-1000-desktop.png");
-  }
-
-  .food__info__fish-500::before {
-    background-image: url("../img/fish-500-desktop.png");
-  }
-
-  .food__info__fish-1000::before {
-    background-image: url("../img/fish-1000-desktop.png");
-  }
-
-  .food__info__buckwheat-500::before {
-    background-image: url("../img/buckwheat-500-desktop.png");
-  }
-
-  .food__info__buckwheat-1000::before {
-    background-image: url("../img/buckwheat-1000-desktop.png");
-  }
-
-  .food__info__rice::before {
-    background-image: url("../img/rice-desktop.png");
   }
 
   .food__info__plus::before {
     width: 60px;
     height: 60px;
-    background-image: url("../img/plus-tablet.png");
     top: 52px;
+    background-size: 60px 60px;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-size: 60px 60px;
+    }
   }
 
   .food__description {
@@ -201,6 +142,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-left: 0;
+  }
+
+  .food__image {
+    width: 168px;
+    height: 200px;
+    top: -80px;
+    margin-left: -84px;
+    left: 50%;
   }
 
   .food__type {
@@ -219,11 +169,6 @@
   .food__order-button {
     margin: 0;
     margin-top: 33px;
-  }
-
-  .food__image {
-    width: 168px;
-    height: 200px;
   }
 }
 

@@ -13,14 +13,12 @@
   <header class="page-header page-element">
     <ul class="menu">
       <li class="menu__item">
-        <a href="index.html" class="title-mobile">
-          <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
-        </a>
-        <a href="index.html" class="title-mobile">
-          <img src="img/logo-2.svg" class="title__text" width="101" height="18" alt="Cat energy">
-        </a>
-        <a href="index.html" class="title-desktop">
-          <img src="img/logo-desktop.svg" width="174" height="50" alt="Cat energy">
+        <a href="index.html" class="title">
+          <picture class="title-images">
+            <source srcset="img/logo-desktop.svg 2x" media="(min-width: 768px)">
+            <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
+            <img src="img/logo-2.svg" class="title__text" alt="Cat energy">
+          </picture>
         </a>
         <div class="burger-menu">
           <div class="burger-menu__layer first"></div>
@@ -44,7 +42,12 @@
       <h1 class="food__title">Каталог продукции</h1>
       <ul class="food__list">
         <li class="food__item">
-          <div class="food__info food__info__hen-500">
+          <picture class="food__image">
+            <source media="(min-width: 1440px)" srcset="img/hen-500-desktop.png, img/chicken-small-desktop@2x.png 2x 161px">
+            <source media="(min-width: 768px)" srcset="img/hen-500-desktop.png, img/chicken-small-tablet@2x.png 2x 161px">
+            <img src="img/hen-500.png" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Chicken small">
+          </picture>
+          <div class="food__info">
             <div class="food__description">
               <h4 class="food__type">Cat Energy PRO 500 г</h4>
               <div class="food-detail">
@@ -64,7 +67,12 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info food__info__hen-1000">
+          <picture class="food__image">
+            <source media="(min-width: 1440px)" srcset="img/hen-1000-desktop.png, img/chicken-big-desktop@2x.png 2x 161px">
+            <source media="(min-width: 768px)" srcset="img/hen-1000-desktop.png, img/chicken-big-tablet@2x.png 2x 161px">
+            <img src="img/hen-500.png" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Chicken big">
+          </picture>
+          <div class="food__info">
             <div class="food__description">
               <h4 class="food__type">Cat Energy PRO 1000 г</h4>
               <div class="food-detail">
@@ -84,7 +92,12 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info food__info__fish-500">
+          <picture class="food__image">
+            <source media="(min-width: 1440px)" srcset="img/fish-500-desktop.png, img/fish-small-desktop@2x.png 2x 161px">
+            <source media="(min-width: 768px)" srcset="img/fish-500-desktop.png, img/fish-small-tablet@2x.png 2x 161px">
+            <img src="img/hen-500.png" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Fish small">
+          </picture>
+          <div class="food__info">
             <div class="food__description">
               <h4 class="food__type">Cat Energy PRO 500 г</h4>
               <div class="food-detail">
@@ -104,7 +117,12 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info food__info__fish-1000">
+          <picture class="food__image">
+            <source media="(min-width: 1440px)" srcset="img/fish-1000-desktop.png, img/fish-big-desktop@2x.png 2x 161px">
+            <source media="(min-width: 768px)" srcset="img/fish-1000-desktop.png, img/fish-big-tablet@2x.png 2x 161px">
+            <img src="img/hen-500.png" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Fish big">
+          </picture>
+          <div class="food__info">
             <div class="food__description">
               <h4 class="food__type">Cat Energy PRO 1000 г</h4>
               <div class="food-detail">
@@ -124,7 +142,12 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info food__info__buckwheat-500">
+          <picture class="food__image">
+            <source media="(min-width: 1440px)" srcset="img/buckwheat-500-desktop.png, img/fish-big-desktop@2x.png 2x 161px">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-500-desktop.png, img/fish-big-tablet@2x.png 2x 161px">
+            <img src="img/buckwheat-500.png" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Buckwheat big">
+          </picture>
+          <div class="food__info">
             <div class="food__description">
               <h4 class="food__type">Cat Energy SLIM 500 г</h4>
               <div class="food-detail">
@@ -144,7 +167,12 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info food__info__buckwheat-1000">
+          <picture class="food__image">
+            <source media="(min-width: 1440px)" srcset="img/buckwheat-1000-desktop.png, img/fish-big-desktop@2x.png 2x 161px">
+            <source media="(min-width: 768px)" srcset="img/buckwheat-1000-desktop.png, img/fish-big-tablet@2x.png 2x 161px">
+            <img src="img/buckwheat-1000.png" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Buckwheat big">
+          </picture>
+          <div class="food__info">
             <div class="food__description">
               <h4 class="food__type">Cat Energy SLIM 1000 г</h4>
               <div class="food-detail">
@@ -164,7 +192,12 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item">
-          <div class="food__info food__info__rice">
+          <picture class="food__image">
+            <source media="(min-width: 1440px)" srcset="img/rice-desktop.png, img/rice-small-desktop@2x.png 2x 161px">
+            <source media="(min-width: 768px)" srcset="img/rice-desktop.png, img/rice-small-tablet@2x.png 2x 161px">
+            <img src="img/rice.png" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Rice big">
+          </picture>
+          <div class="food__info">
             <div class="food__description">
               <h4 class="food__type">Cat Energy SLIM 500 г</h4>
               <div class="food-detail">
@@ -184,7 +217,10 @@
           <button class="food__order-button">Заказать</button>
         </li>
         <li class="food__item show-more">
-          <div class="food__info food__info__plus">
+          <picture class="food__image show-more__image-block">
+            <img src="img/plus.svg" class="show-more__image" alt="plus">
+          </picture>
+          <div class="show-more__description food__info">
             <p class="show-more__title">Показать еще 100500 товаров</p>
             <p class="show-more__info">На самом деле вкусов гораздо больше!</p>
           </div>
@@ -252,9 +288,11 @@
         <p class="contacts__city">Санкт-Петербург</p>
       </div>
     </div>
-    <img src="img/location.jpg" alt="location" class="footer-links__map__mobile" width="100%" height="362">
-    <img src="img/location-tablet.jpg" alt="location" class="footer-links__map__tablet" width="100%" height="400">
-    <img src="img/map-desktop.png" alt="location" class="footer-links__map__desktop" width="100%" height="400" />
+    <picture class="footer-links-map">
+      <source media="(min-width: 1440px)" srcset="img/location-desktop.png 1x, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/bg-map-tablet@2x.png 2x">
+      <img src="img/location.jpg" srcset="img/bg-map-mobile@2x.png 2x" alt="location" class="footer-links-map__image">
+    </picture>
     <div class="links">
       <div class="links-container">
         <div class="logo links-block">

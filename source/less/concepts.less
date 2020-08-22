@@ -34,23 +34,49 @@
     left: -20px;
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-color: @choose-program-color;
+    background-position: center;
   }
 }
 
 .concept__item__nutrients::before {
-  background-image: url("../img/nutrients.png");
+  background-image: url("../img/advantage-leaf.png");
+  background-size: 30px 32px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 45px 47px;
+  }
 }
 
 .concept__item__powder::before {
-  background-image: url("../img/powder.png");
+  background-image: url("../img/advantage-powder.png");
+  background-size: 29px 31px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: 44px 46px;
+  }
 }
 
 .concept__item__substitute::before {
-  background-image: url("../img/substitute.png");
+  background-image: url("../img/advantage-dining.png");
+  background-size: 23px 30px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: 55px 55px;
+  }
 }
 
 .concept__item__time::before {
-  background-image: url("../img/time.png");
+  background-image: url("../img/advantage-clock.png");
+  background-size: 32px 33px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: 47px 48px;
+  }
 }
 
 .set-num(@index) when (@index > 0) {

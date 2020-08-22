@@ -1,21 +1,31 @@
+.title {
+  flex-grow: 2;
+}
+
+.title-images {
+  display: flex;
+}
+
 .title__logo {
   display: block;
+  height: 38px;
 }
 
 .title__text {
-  margin-top: 6px;
-}
-
-.title-desktop {
-  display: none;
+  height: 18px;
+  margin: auto auto;
 }
 
 @media (min-width: 768px) {
-  .title-mobile {
+  .title__text {
     display: none;
   }
 
-  .title-desktop {
+  .title__logo {
+    height: 54px;
+  }
+
+  .title {
     display: block;
 
     &:hover {

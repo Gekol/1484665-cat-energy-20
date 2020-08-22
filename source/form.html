@@ -13,14 +13,12 @@
   <header class="page-header page-element">
     <ul class="menu">
       <li class="menu__item">
-        <a href="index.html" class="title-mobile">
-          <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
-        </a>
-        <a href="index.html" class="title-mobile">
-          <img src="img/logo-2.svg" class="title__text" width="101" height="18" alt="Cat energy">
-        </a>
-        <a href="index.html" class="title-desktop">
-          <img src="img/logo-desktop.svg" width="174" height="50" alt="Cat energy">
+        <a href="index.html" class="title">
+          <picture class="title-images">
+            <source srcset="img/logo-desktop.svg 2x" media="(min-width: 768px)">
+            <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
+            <img src="img/logo-2.svg" class="title__text" alt="Cat energy">
+          </picture>
         </a>
         <div class="burger-menu">
           <div class="burger-menu__layer first"></div>
@@ -40,7 +38,7 @@
     </ul>
   </header>
   <main class="main-content page-element">
-    <form action="" method="GET" class="program-form main-content__element">
+    <form action="form.html" method="GET" class="program-form main-content__element">
       <h1 class="program-form__title">Подбор программы</h1>
       <h2 class="program-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
       <div class="adaptive-block">
@@ -125,13 +123,15 @@
         <p class="contacts__city">Санкт-Петербург</p>
       </div>
     </div>
-    <img src="img/location.jpg" alt="location" class="footer-links__map__mobile" width="100%" height="362">
-    <img src="img/location-tablet.jpg" alt="location" class="footer-links__map__tablet" width="100%" height="400">
-    <img src="img/map-desktop.png" alt="location" class="footer-links__map__desktop" width="100%" height="400" />
+    <picture class="footer-links-map">
+      <source media="(min-width: 1440px)" srcset="img/location-desktop.png 1x, img/bg-map-desktop@2x.png 2x">
+      <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/bg-map-tablet@2x.png 2x">
+      <img src="img/location.jpg" srcset="img/bg-map-mobile@2x.png 2x" alt="location" class="footer-links-map__image">
+    </picture>
     <div class="links">
       <div class="links-container">
         <div class="logo links-block">
-          <img src="img/logo-2.svg" alt="Cat energy" width="128" height="24">
+          <img src="img/logo-2.svg" alt="Cat energy" class="footer-links__map" width="128" height="24">
         </div>
         <div class="networks links-block">
           <ul class="networks-list">

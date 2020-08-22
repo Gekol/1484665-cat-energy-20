@@ -31,3 +31,11 @@ burgerMenu.addEventListener("click", function(event) {
     });
   }
 });
+
+let programFormSubmitButton = document.querySelector(".program-form__submit");
+if (programFormSubmitButton != null) {
+  programFormSubmitButton.addEventListener("submit", function(event) {
+    event.preventDefault();
+    console.log(document.querySelector(""))
+  })
+}
