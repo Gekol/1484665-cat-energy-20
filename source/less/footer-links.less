@@ -18,6 +18,12 @@
       width: 57px;
       height: 53px;
       background-image: url("../img/map-pin.png");
+
+      @supports (background-image: url("../img/map-pin.webp")) {
+        & {
+          background-image: url("../img/map-pin.webp");
+        }
+      }
       background-size: 100% 100%;
       position: absolute;
       right: 129px;
@@ -31,7 +37,7 @@
   height: 362px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-size) {
   .footer-links-map {
     height: 400px;
 
@@ -54,7 +60,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-size) {
   .footer-links {
     position: relative;
     grid-template-columns: 110px 1fr 110px;

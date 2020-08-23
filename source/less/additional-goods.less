@@ -4,7 +4,7 @@
 
 .additional-goods__title {
   width: fit-content;
-  .set-font(24px, 24px);
+  .set-font-equal(24px);
   font-weight: normal;
   margin-top: 28px;
   margin-bottom: 35px;
@@ -37,14 +37,14 @@
 }
 
 .additional-goods__type {
-  .set-font(16px, 16px);
+  .set-font-equal(16px);
   text-transform: uppercase;
   color: @food-type-color;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-size) {
   .additional-goods__title {
-    .set-font(36px, 36px);
+    .set-font-equal(36px);
     margin-top: 68px;
     margin-bottom: 80px;
     padding-left: 37px;
@@ -86,13 +86,13 @@
   }
 
   .additional-goods__type {
-    .set-font(20px, 20px);
+    .set-font-equal(20px);
     margin: 0;
     flex-grow: 2;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-size) {
   .additional-goods__list {
     flex-grow: 1;
     margin: 0;

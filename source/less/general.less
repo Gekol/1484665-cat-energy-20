@@ -5,6 +5,7 @@
 .main-page {
   display: grid;
   grid-template-columns: 20px 1fr 20px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
 }
@@ -12,18 +13,17 @@
 .page-element {
   grid-column-start: 2;
   grid-column-end: 3;
-  min-width: 250px;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-size) {
   .main-page {
     grid-template-columns: 30px 1fr 30px;
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-size) {
   .main-page {
     display: grid;
     grid-template-columns: 110px 1fr 110px;

@@ -26,7 +26,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-size) {
   .program {
     display: flex;
     align-items: center;
@@ -39,11 +39,11 @@
 
   .program__link {
     box-sizing: border-box;
-    .set-font(20px, 20px);
+    .set-font-equal(20px);
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-size) {
   .program {
     top: 455px;
   }

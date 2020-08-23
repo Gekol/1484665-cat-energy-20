@@ -9,10 +9,10 @@
 }
 
 .properties__price {
-  .set-font(14px, 14px, Arial);
+  .set-font-equal(14px, Arial);
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-size) {
   .properties__weight {
     margin-right: 51px;
     .set-font(16px, 20px, Arial);
@@ -25,7 +25,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-size) {
   .properties {
     flex-grow: 1;
     margin-right: 40px;

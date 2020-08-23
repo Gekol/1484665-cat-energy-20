@@ -12,6 +12,11 @@
   text-align: center;
 }
 
+.show-more__description {
+  flex-direction: column;
+  margin-top: 38px;
+}
+
 .show-more__image-block {
   top: 26px;
 }
@@ -41,11 +46,15 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-size) {
   .show-more {
     background-color: @white-color;
     border: 2px solid @facility-background;
     text-align: center;
+  }
+
+  .show-more__description {
+    margin-top: 0;
   }
 
   .show-more__image-block {
