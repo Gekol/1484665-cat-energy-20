@@ -8,7 +8,7 @@
   border-bottom: 1px solid @footer-block-border-color;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-size) {
   .page-header {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -17,7 +17,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-size) {
   .page-header {
     grid-column-start: 1;
     grid-column-end: -1;

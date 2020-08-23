@@ -36,7 +36,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-size) {
   .example {
     .set-font(16px, 24px);
     border-top: 1px solid @block-border-color;
@@ -50,7 +50,7 @@
   }
 
   .example__title {
-    .set-font(60px, 60px);
+    .set-font-equal(60px);
     padding: 0 30px;
   }
 
@@ -69,7 +69,7 @@
     flex-direction: column;
     justify-content: center;
     margin-left: auto;
-    .set-font(20px, 20px);
+    .set-font-equal(20px);
     text-transform: uppercase;
     text-align: end;
   }
@@ -84,7 +84,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-size) {
   .example {
     padding: 0;
     box-sizing: border-box;

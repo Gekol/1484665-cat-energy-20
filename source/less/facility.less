@@ -32,7 +32,7 @@
 .facility__link {
   display: flex;
   color: @black-color;
-  .set-font(16px, 16px);
+  .set-font-equal(16px);
   text-decoration: none;
   text-transform: uppercase;
   padding: 15px 0 18px;
@@ -70,14 +70,14 @@
   background-image: url("../img/cat-back1.svg");
 }
 
-@media (min-width: 768px) {
+@media (min-width: @tablet-size) {
   .facility {
     min-height: 372px;
     margin-top: 30px;
   }
 
   .facility__title {
-    .set-font(36px, 36px);
+    .set-font-equal(36px);
     margin: 77px 32px 24px;
   }
 
@@ -119,7 +119,7 @@
   }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: @desktop-size) {
   .facility {
     min-width: 570px;
     width: calc(50% - 40px);

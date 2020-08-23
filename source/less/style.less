@@ -17,6 +17,9 @@
 @block-border-color: #E6E6E6;
 @bar-background-tablet: #DCDCDC;
 
+@tablet-size: 768px;
+@desktop-size: 1440px;
+
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/Oswald-Regular.woff2") format("woff2"),
@@ -75,6 +78,12 @@
   font-family: @family, "Arial", sans-serif;
   font-size: @size;
   line-height: @height;
+}
+
+.set-font-equal(@size, @family: Oswald) {
+  font-family: @family, "Arial", sans-serif;
+  font-size: @size;
+  line-height: @size;
 }
 
 @import "general.less";
