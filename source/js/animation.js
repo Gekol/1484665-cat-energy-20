@@ -39,3 +39,17 @@ if (programFormSubmitButton != null) {
     console.log(document.querySelector(""))
   })
 }
+
+function hideCat(event) {
+  fatCat.style.width = (width * (100 - rangeInput.value) / 100) + "px";
+}
+
+let rangeInput = document.querySelector(".bar-block");
+let fatCat = document.querySelector(".cat__before");
+let width = 708;
+
+hideCat(null);
+
+if (rangeInput != null) {
+  rangeInput.addEventListener("input", hideCat)
+}

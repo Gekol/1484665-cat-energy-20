@@ -4,7 +4,10 @@
   &__after {
     position: absolute;
     top: 0;
-    z-index: -1;
+  }
+
+  &__before {
+    z-index: 1;
   }
 }
 
@@ -13,5 +16,7 @@
     width: 708px;
     position: absolute;
     top: -161px;
+    overflow: hidden;
+    left: 0;
   }
 }

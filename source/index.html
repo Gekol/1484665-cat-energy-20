@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -133,14 +135,15 @@
           <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="After">
         </picture>
       </div>
-      <div class="bar">
+      <form action="/" class="bar">
         <span class="bar__before">Было</span>
-        <div class="bar-block">
-          <div class="selected" tabindex="0"></div>
-          <div class="toggle" tabindex="0"></div>
-        </div>
+        <!-- <input type="range" name="" id=""> -->
+        <input type="range" class="bar-block" min="0" max="100" value="50">
+          <!-- <div class="selected" tabindex="0"></div> -->
+          <!-- <div class="toggle" tabindex="0"></div> -->
+        <!-- </div> -->
         <span class="bar__after">Стало</span>
-      </div>
+      </form>
     </section>
   </main>
   <footer class="footer-links page-element">
