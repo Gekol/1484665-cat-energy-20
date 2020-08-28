@@ -1,5 +1,6 @@
 .cat {
-  width: fit-content;
+  overflow: hidden;
+  width: 308px;
 
   &__after {
     position: absolute;
@@ -13,10 +14,16 @@
 
 @media (min-width: @tablet-size) {
   .cat {
-    width: 708px;
+    width: 690px;
     position: absolute;
     top: -161px;
-    overflow: hidden;
-    left: 0;
+
+    &__before {
+      left: 50px;
+    }
+
+    &__after {
+      right: 28px;
+    }
   }
 }

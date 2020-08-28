@@ -1,12 +1,19 @@
 .cats {
   display: flex;
-  justify-content: center;
   position: relative;
+  left: -20px;
+  width: calc(100% + 40px);
+  padding: 0 calc(50% - 320px / 2 + 20px);
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-size) {
   .cats {
-    padding-left: 25px;
+    box-sizing: unset;
+    width: 708px;
+    padding: 0 calc(50% - 708px / 2);
+    left: 0;
+    justify-content: center;
     margin-top: 250px;
     background-color: @example-background-color;
     background-position-x: right;
@@ -17,9 +24,12 @@
 @media (min-width: @desktop-size) {
   .cats {
     width: 708px;
+    padding: 0;
     position: absolute;
     bottom: 115px;
     right: 70px;
+    left: unset;
+    padding-left: 0;
     background-color: unset;
   }
 }

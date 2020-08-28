@@ -27,6 +27,22 @@
   &::-webkit-slider-thumb {
     appearance: none;
   }
+
+  &::-moz-range-thumb {
+    appearance: none;
+  }
+
+  &::-moz-range-track {
+    height: 100%;
+    border-radius: 6px;
+    background: @choose-program-color;
+  }
+
+  &::-webkit-slider-runnable-track {
+    height: 100%;
+    border-radius: 6px;
+    background: @choose-program-color;
+  }
 }
 
 @media (min-width: @tablet-size) {
@@ -47,6 +63,8 @@
       background-position: center;
       border: 1px solid @bar-border-color;
       filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.16));
+      position: relative;
+      bottom: 15px;
     }
 
     &::-webkit-slider-thumb:hover {

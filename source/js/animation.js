@@ -36,20 +36,26 @@ let programFormSubmitButton = document.querySelector(".program-form__submit");
 if (programFormSubmitButton != null) {
   programFormSubmitButton.addEventListener("submit", function(event) {
     event.preventDefault();
-    console.log(document.querySelector(""))
   })
 }
 
 function hideCat(event) {
   fatCat.style.width = (width * (100 - rangeInput.value) / 100) + "px";
+  console.log("calc(50% - " + width + "px/2)");
+  fatCat.style.left = "calc(50% - " + width + "px/2)";
+  slimCat.style.width = (width * rangeInput.value / 100) + "px";
+  slimCat.style.right = "calc(50% - " + width + "px/2)";
+  console.log(slimCat.children[slimCat.children.length - 1]);
+  slimCat.children[slimCat.children.length - 1].style.position = "relative";
+  slimCat.children[slimCat.children.length - 1].style.right = width * (100 - rangeInput.value) / 100 + "px";
 }
 
 let rangeInput = document.querySelector(".bar-block");
 let fatCat = document.querySelector(".cat__before");
-let width = 708;
-
-hideCat(null);
+let slimCat = document.querySelector(".cat__after");
+let width = window.innerWidth < 768?320:690;
 
 if (rangeInput != null) {
+  hideCat(null);
   rangeInput.addEventListener("input", hideCat)
 }
