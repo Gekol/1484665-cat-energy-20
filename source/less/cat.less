@@ -1,17 +1,29 @@
 .cat {
-  width: fit-content;
+  overflow: hidden;
+  width: 308px;
 
   &__after {
     position: absolute;
     top: 0;
-    z-index: -1;
+  }
+
+  &__before {
+    z-index: 1;
   }
 }
 
 @media (min-width: @tablet-size) {
   .cat {
-    width: 708px;
+    width: 690px;
     position: absolute;
     top: -161px;
+
+    &__before {
+      left: 50px;
+    }
+
+    &__after {
+      right: 28px;
+    }
   }
 }

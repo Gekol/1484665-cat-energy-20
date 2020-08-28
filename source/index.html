@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="preload" href="fonts/Oswald-Regular.woff2" as="font">
+  <link rel="preload" href="css/style.min.css" as="style">
   <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -50,7 +52,7 @@
             <source type="image/webp" srcset="img/index-can.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source srcset="img/index-can-desktop@2x.png 2x" media="(min-width: 1440px)">
             <source srcset="img/index-can-tablet@2x.jpg 2x" media="(min-width: 768px)">
-            <img src="img/index-can.png" srcset="img/index-can-mobile@2x.png 2x" alt="MDN">
+            <img src="img/index-can.png" srcset="img/index-can-mobile@2x.png 2x" class="content-header__image__element" alt="MDN">
           </picture>
         </div>
       </article>
@@ -133,14 +135,11 @@
           <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="After">
         </picture>
       </div>
-      <div class="bar">
-        <span class="bar__before">Было</span>
-        <div class="bar-block">
-          <div class="selected" tabindex="0"></div>
-          <div class="toggle" tabindex="0"></div>
-        </div>
-        <span class="bar__after">Стало</span>
-      </div>
+      <form action="/" class="bar">
+        <button class="bar__button bar__button__before">Было</button>
+        <input type="range" class="bar-block" min="0" max="100" value="50">
+        <button class="bar__button bar__button__after">Стало</button>
+      </form>
     </section>
   </main>
   <footer class="footer-links page-element">

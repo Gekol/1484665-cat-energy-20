@@ -36,6 +36,46 @@ let programFormSubmitButton = document.querySelector(".program-form__submit");
 if (programFormSubmitButton != null) {
   programFormSubmitButton.addEventListener("submit", function(event) {
     event.preventDefault();
-    console.log(document.querySelector(""))
   })
 }
+
+function hideCat(event) {
+  fatCat.style.width = (width * (100 - rangeInput.value) / 100) + "px";
+  fatCat.style.left = "calc(50% - " + width + "px/2)";
+  slimCat.style.width = (width * rangeInput.value / 100) + "px";
+  slimCat.style.right = "calc(50% - " + width + "px/2)";
+  slimCat.children[slimCat.children.length - 1].style.position = "relative";
+  slimCat.children[slimCat.children.length - 1].style.right = width * (100 - rangeInput.value) / 100 + "px";
+}
+
+let rangeInput = document.querySelector(".bar-block");
+let fatCat = document.querySelector(".cat__before");
+let slimCat = document.querySelector(".cat__after");
+let width = window.innerWidth < 768?320:690;
+
+if (rangeInput != null) {
+  if (window.innerWidth < 768) {
+    rangeInput.value = 0;
+  }
+  hideCat(null);
+  rangeInput.addEventListener("input", hideCat);
+  let buttonBefore = document.querySelector(".bar__button__before");
+  if (buttonBefore != null) {
+    buttonBefore.addEventListener("click", function(event) {
+      event.preventDefault();
+      rangeInput.value = 0;
+      hideCat();
+    })
+  }
+  let buttonAfter = document.querySelector(".bar__button__after");
+  if (buttonAfter != null) {
+    buttonAfter.addEventListener("click", function(event) {
+      event.preventDefault();
+      rangeInput.value = 100;
+      hideCat();
+    })
+  }
+}
+
+
+
