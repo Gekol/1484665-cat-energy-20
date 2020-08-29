@@ -3,7 +3,6 @@
   grid-column-start: 1;
   grid-column-end: -1;
   box-sizing: border-box;
-  padding: 0 20px;
 }
 
 .links-container {
@@ -24,10 +23,6 @@
 }
 
 @media (min-width: @tablet-size) {
-  .links {
-    padding: 0 30px;
-  }
-
   .links-container {
     flex-direction: row;
     justify-content: space-between;
@@ -40,11 +35,5 @@
     &:not(:last-child) {
       border: none;
     }
-  }
-}
-
-@media (min-width: @desktop-size) {
-  .links {
-    padding: 0 110px;
   }
 }

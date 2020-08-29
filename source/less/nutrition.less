@@ -1,26 +1,21 @@
 .nutrition {
-  grid-column-start: 1;
-  grid-column-end: -1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: fit-content;
 }
 
 @media (min-width: @tablet-size) {
   .nutrition {
     align-items: flex-start;
-    margin-left: 87px;
-    grid-column-start: 2;
-    grid-column-end: 3;
+    padding-left: 87px;
   }
 }
 
 @media (min-width: @desktop-size) {
   .nutrition {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    padding-left: 190px;
-    margin-left: 0;
+    width: 1220px;
+    padding-left: 80px;
 
     &::after {
       content: "";

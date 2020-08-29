@@ -96,15 +96,25 @@
     background-color: @example-background-color;
     .set-font(20px, 30px);
     padding-bottom: 67px;
+    width: 100vw;
+    margin-left: calc((-100vw + 708px) / 2);
+    z-index: 1;
   }
+
+  .bar__button {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.24);
+  }
+
 }
 
 @media (min-width: @desktop-size) {
   .bar {
+    width: fit-content;
     background-color: unset;
     position: absolute;
-    right: 175px;
-    bottom: 0;
+    right: -10px;
+    margin: 0;
+    bottom: 8px;
     .set-font(20px, 30px);
   }
 }

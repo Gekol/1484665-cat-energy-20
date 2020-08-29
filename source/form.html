@@ -12,22 +12,24 @@
 </head>
 
 <body class="main-page">
-  <header class="page-header page-element">
+  <header class="page-header page-element container">
     <ul class="menu">
       <li class="menu__item">
-        <a href="index.html" class="title">
-          <picture class="title-images">
-            <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
-            <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
-            <svg class="title__text" width="101" height="18">
-              <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
-            </svg>
-          </picture>
-        </a>
-        <div class="burger-menu">
-          <div class="burger-menu__layer first"></div>
-          <div class="burger-menu__layer second"></div>
-          <div class="burger-menu__layer third"></div>
+        <div class="logo-container">
+          <a href="index.html" class="title">
+            <picture class="title-images">
+              <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
+              <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
+              <svg class="title__text" width="101" height="18">
+                <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
+              </svg>
+            </picture>
+          </a>
+          <div class="burger-menu">
+            <div class="burger-menu__layer first"></div>
+            <div class="burger-menu__layer second"></div>
+            <div class="burger-menu__layer third"></div>
+          </div>
         </div>
       </li>
       <li class="menu__item">
@@ -42,7 +44,7 @@
     </ul>
   </header>
   <main class="main-content page-element">
-    <form action="form.html" method="GET" class="program-form main-content__element">
+    <form action="form.html" method="GET" class="program-form main-content__element container">
       <h1 class="program-form__title">Подбор программы</h1>
       <h2 class="program-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
       <div class="adaptive-block">
@@ -120,23 +122,27 @@
     </form>
   </main>
   <footer class="footer-links page-element">
-    <div class="contacts contacts__brown">
-      <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-      <div class="contacts__block">
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="contacts__city">Санкт-Петербург</p>
+    <div class="container contacts-container contacts-container__brown">
+      <div class="contacts">
+        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <div class="contacts__block">
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </div>
       </div>
     </div>
     <picture class="footer-links-map">
-      <source type="type/webp" srcset="img/location.webp 1x, img/bg-map-mobile@2x.webp 2x">
-      <source type="type/webp" media="(min-width: 768px)" srcset="img/location-tablet.webp 1x, img/bg-map-tablet@2x.webp 2x">
-      <source type="type/webp" media="(min-width: 1440px)" srcset="img/location-desktop.webp 1x, img/bg-map-desktop@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 1440px)"
+        srcset="img/location-desktop.webp 1x, img/bg-map-desktop@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 768px)"
+        srcset="img/location-tablet.webp 1x, img/bg-map-tablet@2x.webp 2x">
+      <source type="image/webp" srcset="img/location.webp 1x, img/bg-map-mobile@2x.webp 2x">
       <source media="(min-width: 1440px)" srcset="img/location-desktop.png 1x, img/bg-map-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/bg-map-tablet@2x.png 2x">
       <img src="img/location.jpg" srcset="img/bg-map-mobile@2x.png 2x" alt="location" class="footer-links-map__image">
     </picture>
     <div class="links">
-      <div class="links-container">
+      <div class="links-container container">
         <div class="logo links-block">
           <svg class="footer-links__map" width="128" height="24" viewBox="0 0 128 24" fill="none">
             <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>

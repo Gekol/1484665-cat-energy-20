@@ -11,22 +11,24 @@
 </head>
 
 <body class="main-page">
-  <header class="page-header page-element">
+  <header class="page-header page-element container">
     <ul class="menu">
       <li class="menu__item">
-        <a href="index.html" class="title">
-          <picture class="title-images">
-            <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
-            <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
-            <svg class="title__text" width="101" height="18">
-              <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
-            </svg>
-          </picture>
-        </a>
-        <div class="burger-menu">
-          <div class="burger-menu__layer first"></div>
-          <div class="burger-menu__layer second"></div>
-          <div class="burger-menu__layer third"></div>
+        <div class="logo-container">
+          <a href="index.html" class="title">
+            <picture class="title-images">
+              <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
+              <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
+              <svg class="title__text" width="101" height="18">
+                <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
+              </svg>
+            </picture>
+          </a>
+          <div class="burger-menu">
+            <div class="burger-menu__layer first"></div>
+            <div class="burger-menu__layer second"></div>
+            <div class="burger-menu__layer third"></div>
+          </div>
         </div>
       </li>
       <li class="menu__item current-page">
@@ -41,8 +43,8 @@
     </ul>
   </header>
   <main class="main-content page-element">
-    <section class="nutrition main-content__element">
-      <article class="content-header">
+    <section class="nutrition main-content__element container">
+      <article class="content-header container">
         <h1 class="content-header__title">Функциональное питание для котов</h1>
         <h3 class="content-header__subtitle">Занялся собой? Займись котом!</h3>
         <div class="content-header-image-block">
@@ -52,7 +54,8 @@
             <source type="image/webp" srcset="img/index-can.webp 1x, img/index-can-mobile@2x.webp 2x">
             <source srcset="img/index-can-desktop@2x.png 2x" media="(min-width: 1440px)">
             <source srcset="img/index-can-tablet@2x.jpg 2x" media="(min-width: 768px)">
-            <img src="img/index-can.png" srcset="img/index-can-mobile@2x.png 2x" class="content-header__image__element" alt="MDN">
+            <img src="img/index-can.png" srcset="img/index-can-mobile@2x.png 2x" class="content-header__image__element"
+              alt="MDN">
           </picture>
         </div>
       </article>
@@ -60,7 +63,7 @@
         <a href="form.html" class="program__link">Подобрать программу</a>
       </div>
     </section>
-    <section class="facilities main-content__element">
+    <section class="facilities main-content__element container">
       <ul class="facilities-list">
         <li class="facility facility__get-slim">
           <h3 class="facility__title">Похудение</h3>
@@ -78,7 +81,7 @@
         </li>
       </ul>
     </section>
-    <section class="concepts main-content__element">
+    <section class="concepts main-content__element container">
       <h2 class="concepts__title">Как это работает</h2>
       <ol class="concepts-list">
         <li class="concept__item concept__item__nutrients">Функциональное питание содержит только полезные питательные
@@ -93,73 +96,82 @@
     </section>
     <section class="example main-content__element">
       <div class="example__title-block">
-        <h2 class="example__title">Живой пример</h2>
+        <h2 class="example__title container">Живой пример</h2>
       </div>
-      <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-        Slim.
-        Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-        16 часов
-        в день.</p>
-      <div class="aims">
-        <div class="aims-block">
-          <div class="aim aim-weight">
-            <h4 class="aim__value">5 кг.</h4>
-            <span class="aim__info">снижение веса</span>
+      <div class="container example-container">
+        <p class="example__info">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat
+          Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему
+          спит по
+          16 часов в день.</p>
+        <div class="aims">
+          <div class="aims-block">
+            <div class="aim aim-weight">
+              <h4 class="aim__value">5 кг.</h4>
+              <span class="aim__info">снижение веса</span>
+            </div>
+            <div class="aim aim-time-spent">
+              <h4 class="aim__value">60 дней</h4>
+              <span class="aim__info">затрачено времени</span>
+            </div>
           </div>
-          <div class="aim aim-time-spent">
-            <h4 class="aim__value">60 дней</h4>
-            <span class="aim__info">затрачено времени</span>
+          <div class="example-expenses-tablet">
+            <p class="example-expenses-tablet__info">Затраты на питание:</p>
+            <p class="example-expenses-tablet__price">15 000 РУБ.</p>
           </div>
+          <p class="example-expenses-mobile">Затраты на питание: 15 000 РУБ.</p>
         </div>
-        <div class="example-expenses-tablet">
-          <p class="example-expenses-tablet__info">Затраты на питание:</p>
-          <p class="example-expenses-tablet__price">15 000 РУБ.</p>
+        <div class="cats">
+          <picture class="cat cat__before">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Before">
+          </picture>
+          <picture class="cat cat__after">
+            <source type="image/webp" media="(min-width: 1440px)"
+              srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+            <source srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+            <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="After">
+          </picture>
         </div>
+        <form action="/" class="bar">
+          <button class="bar__button bar__button__before">Было</button>
+          <input type="range" class="bar-block" min="0" max="100" value="50">
+          <button class="bar__button bar__button__after">Стало</button>
+        </form>
       </div>
-      <p class="example-expenses-mobile">Затраты на питание: 15 000 РУБ.</p>
-      <div class="cats">
-        <picture class="cat cat__before">
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-          <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Before">
-        </picture>
-        <picture class="cat cat__after">
-          <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-          <source srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
-          <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="After">
-        </picture>
-      </div>
-      <form action="/" class="bar">
-        <button class="bar__button bar__button__before">Было</button>
-        <input type="range" class="bar-block" min="0" max="100" value="50">
-        <button class="bar__button bar__button__after">Стало</button>
-      </form>
     </section>
   </main>
   <footer class="footer-links page-element">
-    <div class="contacts">
-      <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
-      <div class="contacts__block">
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
-        <p class="contacts__city">Санкт-Петербург</p>
+    <div class="container">
+      <div class="contacts">
+        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <div class="contacts__block">
+          <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="contacts__city">Санкт-Петербург</p>
+        </div>
       </div>
     </div>
     <picture class="footer-links-map">
-      <source type="image/webp" media="(min-width: 1440px)" srcset="img/location-desktop.webp 1x, img/bg-map-desktop@2x.webp 2x">
-      <source type="image/webp" media="(min-width: 768px)" srcset="img/location-tablet.webp 1x, img/bg-map-tablet@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 1440px)"
+        srcset="img/location-desktop.webp 1x, img/bg-map-desktop@2x.webp 2x">
+      <source type="image/webp" media="(min-width: 768px)"
+        srcset="img/location-tablet.webp 1x, img/bg-map-tablet@2x.webp 2x">
       <source type="image/webp" srcset="img/location.webp 1x, img/bg-map-mobile@2x.webp 2x">
       <source media="(min-width: 1440px)" srcset="img/location-desktop.png 1x, img/bg-map-desktop@2x.png 2x">
       <source media="(min-width: 768px)" srcset="img/location-tablet.png 1x, img/bg-map-tablet@2x.png 2x">
       <img src="img/location.jpg" srcset="img/bg-map-mobile@2x.png 2x" alt="location" class="footer-links-map__image">
     </picture>
     <div class="links">
-      <div class="links-container">
+      <div class="links-container container">
         <div class="logo links-block">
           <svg class="footer-links__map" width="128" height="24" viewBox="0 0 128 24" fill="none">
             <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
