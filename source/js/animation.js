@@ -76,6 +76,3 @@ if (rangeInput != null) {
     })
   }
 }
-
-
-
