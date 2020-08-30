@@ -12,24 +12,22 @@
 </head>
 
 <body class="main-page">
-  <header class="page-header page-element container">
+  <header class="page-header page-element">
     <ul class="menu">
       <li class="menu__item">
-        <div class="logo-container">
-          <a href="index.html" class="title">
-            <picture class="title-images">
-              <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
-              <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
-              <svg class="title__text" width="101" height="18">
-                <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
-              </svg>
-            </picture>
-          </a>
-          <div class="burger-menu">
-            <div class="burger-menu__layer first"></div>
-            <div class="burger-menu__layer second"></div>
-            <div class="burger-menu__layer third"></div>
-          </div>
+        <a href="index.html" class="title">
+          <picture class="title-images">
+            <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
+            <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
+            <svg class="title__text" width="101" height="18">
+              <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
+            </svg>
+          </picture>
+        </a>
+        <div class="burger-menu">
+          <div class="burger-menu__layer first"></div>
+          <div class="burger-menu__layer second"></div>
+          <div class="burger-menu__layer third"></div>
         </div>
       </li>
       <li class="menu__item">
@@ -44,7 +42,7 @@
     </ul>
   </header>
   <main class="main-content page-element">
-    <form action="form.html" method="GET" class="program-form main-content__element container">
+    <form action="form.html" method="GET" class="program-form main-content__element">
       <h1 class="program-form__title">Подбор программы</h1>
       <h2 class="program-form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h2>
       <div class="adaptive-block">
@@ -123,7 +121,7 @@
   </main>
   <footer class="footer-links page-element">
     <div class="container contacts-container contacts-container__brown">
-      <div class="contacts">
+      <div class="contacts contacts__brown">
         <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
         <div class="contacts__block">
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
