@@ -4,7 +4,7 @@
 
 .main-page {
   display: grid;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: min-content 1fr min-content;
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -15,22 +15,4 @@
   grid-column-end: 3;
   box-sizing: border-box;
   overflow-x: hidden;
-}
-
-@media (min-width: @tablet-size) {
-  .main-page {
-    grid-template-columns: 30px 1fr 30px;
-  }
-}
-
-@media (min-width: @desktop-size) {
-  .main-page {
-    display: grid;
-    grid-template-columns: 110px 1fr 110px;
-  }
-
-  .page-element {
-    grid-column-start: 2;
-    grid-column-end: 3;
-  }
 }

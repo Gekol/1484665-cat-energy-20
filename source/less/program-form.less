@@ -28,9 +28,9 @@
   .set-font-equal(36px);
   margin-top: 27px;
   margin-bottom: 37px;
+  padding: 0 20px;
   position: relative;
   font-weight: normal;
-  padding: 0 20px;
 }
 
 .program-form__subtitle {
@@ -73,15 +73,13 @@
 }
 
 .program-form__submit {
-  min-width: calc(100% - 40px);
+  width: 100%;
   height: 40px;
   .set-font-equal(16px);
   color: @white-color;
   background-color: @choose-program-color;
   text-transform: uppercase;
   box-sizing: border-box;
-  margin-left: 19px;
-  margin-right: 20px;
   margin-bottom: 21px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -98,6 +96,10 @@
 }
 
 @media (min-width: @tablet-size) {
+  .program-form {
+    min-width: 708px;
+  }
+
   .program-form__aim {
     margin-left: 70px;
   }
@@ -105,13 +107,13 @@
   .program-form__title {
     .set-font-equal(60px);
     margin-bottom: 54px;
-    padding-left: 29px;
+    padding: 0 30px;
   }
 
   .program-form__subtitle {
     .set-font(20px, 30px);
-    padding: 0 70px;
     width: 323px;
+    padding: 0 70px;
   }
 
   .program-form__label {
@@ -147,8 +149,8 @@
   .program-form__section {
     padding-left: 0;
     padding-right: 0;
-    margin-left: 71px;
-    margin-right: 67px;
+    margin-left: 70px;
+    margin-right: 37px;
   }
 
   .program-form__section__personal-info {
@@ -175,6 +177,7 @@
     margin-bottom: 72px;
     min-width: 282px;
     height: 52px;
+    width: 282px;
   }
 
   .program-form__required_info {
@@ -184,8 +187,8 @@
 
 @media (min-width: @desktop-size) {
   .program-form {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    width: 1220px;
+    margin: 0 auto;
   }
 
   .program-form__title {
@@ -203,6 +206,7 @@
   .program-form__section__personal-info {
     border: none;
     min-width: 569px;
+    margin-right: 67px;
   }
 
   .program-form__section__aim-info {

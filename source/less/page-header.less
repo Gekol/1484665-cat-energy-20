@@ -1,6 +1,5 @@
 .page-header {
-  grid-column-start: 1;
-  grid-column-end: -1;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,18 +9,17 @@
 
 @media (min-width: @tablet-size) {
   .page-header {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    width: calc(100% - 60px);
     border: none;
+    margin: 0 30px;
     margin-top: 24px;
   }
 }
 
 @media (min-width: @desktop-size) {
   .page-header {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    padding: 54px 110px 0;
-    margin-top: 0;
+    width: 1220px;
+    padding-top: 54px;
+    margin: 0 auto;
   }
 }

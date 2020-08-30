@@ -2,10 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: @example-background-color;
-  padding: 0 20px;
   padding-top: 27px;
-  grid-column-start: 1;
-  grid-column-end: -1;
 }
 
 .example__title-block {
@@ -14,7 +11,7 @@
 
 .example__title {
   .set-font(36px, 40px);
-  margin: 0 0 33px;
+  margin-bottom: 33px;
   font-weight: normal;
 }
 
@@ -51,13 +48,11 @@
 
   .example__title {
     .set-font-equal(60px);
-    padding: 0 30px;
   }
 
   .example__info {
     .set-font(16px, 24px, Arial);
     margin-bottom: 54px;
-    padding: 0 30px;
   }
 
   .example-expenses-mobile {
@@ -93,8 +88,23 @@
     border: none;
   }
 
+  .example-container {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100vw;
+      background-color: @example-background-color;
+      position: absolute;
+      top: 0;
+      left: calc(100% - 270px);
+    }
+  }
+
   .example__title {
-    padding: 0 110px 76px;
+    margin-bottom: 76px;
   }
 
   .example__title-block {
@@ -104,7 +114,6 @@
   .example__info {
     padding-top: 70px;
     width: 436px;
-    padding-left: 110px;
   }
 
   .example-expenses-tablet {

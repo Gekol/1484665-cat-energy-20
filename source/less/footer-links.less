@@ -1,13 +1,9 @@
 .footer-links {
-  grid-column-start: 1;
-  grid-column-end: -1;
-  display: grid;
-  grid-template-columns: 20px 1fr 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-links-map {
-  grid-column-start: 1;
-  grid-column-end: -1;
   height: 362px;
   position: relative;
 
@@ -54,16 +50,11 @@
   .footer-links-map__image {
     height: 400px;
   }
-
-  .footer-links {
-    grid-template-columns: 30px 1fr 30px;
-  }
 }
 
 @media (min-width: @desktop-size) {
   .footer-links {
     position: relative;
-    grid-template-columns: 110px 1fr 110px;
 
     @media (min-resolution: 2dppx) {
       &::after {

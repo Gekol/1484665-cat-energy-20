@@ -167,7 +167,7 @@ exports.reload = sync.reload;
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles", "minStyles"));
-  gulp.watch("source/*.html").on("change", gulp.series("html", "reload"));
+  gulp.watch("source/*.html").on("change", gulp.series("html"));
   gulp.watch("source/js/**/*.js").on("change", gulp.series("js", "reload"));
   gulp.watch("source/img/**/*.{png,jpg}", gulp.series("images", "webp", "reload"));
 }

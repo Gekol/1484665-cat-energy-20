@@ -1,20 +1,22 @@
 .aims {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 @media (min-width: @tablet-size) {
   .aims {
+    flex-direction: row;
     padding: 0 30px;
   }
 }
 
 @media (min-width: @desktop-size) {
   .aims {
-    width: 324px;
+    width: 366px;
     flex-wrap: wrap;
     padding: 0;
-    padding-left: 110px;
     margin-bottom: 75px;
   }
 }
