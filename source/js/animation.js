@@ -98,3 +98,33 @@ if (showMoreButton != null) {
     showMoreBlock.style.display = "none";
   });
 }
+
+let phoneInput = document.querySelector(".program-form__input__phone");
+if (phoneInput != null) {
+  console.log(phoneInput);
+  phoneInput.addEventListener("change", function(event) {
+    console.log(phoneInput.value);
+    console.log(/^\d+{8}$/.test(phoneInput.value) );
+    if (/^\d+{8}$/.test(phoneInput.value) != true) {
+      phoneInput.parentElement.classList.add("contact-data__block__phone__error");
+      phoneInput.classList.add("program-form__input__error");
+    } else {
+      phoneInput.parentElement.classList.remove("contact-data__block__phone__error");
+      phoneInput.classList.remove("program-form__input__error");
+    }
+  });
+}
+
+let emailInput = document.querySelector(".program-form__input__email");
+if (emailInput != null) {
+  console.log(emailInput);
+  emailInput.addEventListener("change", function(event) {
+    if (/@/.test(emailInput.value) != true) {
+      emailInput.parentElement.classList.add("contact-data__block__email__error");
+      emailInput.classList.add("program-form__input__error");
+    } else {
+      emailInput.parentElement.classList.remove("contact-data__block__email__error");
+      emailInput.classList.remove("program-form__input__error");
+    }
+  });
+}
