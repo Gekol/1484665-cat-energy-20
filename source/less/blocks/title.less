@@ -1,0 +1,38 @@
+.title {
+  flex-grow: 2;
+}
+
+.title-images {
+  display: flex;
+}
+
+.title__logo {
+  display: block;
+  height: 38px;
+}
+
+@media (min-width: @tablet-size) {
+  .title__logo {
+    width: 174px;
+    height: 52px;
+  }
+
+  .title {
+    display: block;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .title__logo {
+    width: 202px;
+    height: 59px;
+  }
+}

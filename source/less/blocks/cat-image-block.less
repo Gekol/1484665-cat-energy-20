@@ -1,0 +1,29 @@
+.cat-image-block {
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 22px;
+    top: 27px;
+    border-radius: 50%;
+    background-color: @choose-program-color;
+
+    @media (min-width: @tablet-size) { 
+      width: 200px;
+      height: 200px;
+      left: unset;
+      right: 60px;
+      top: 50%;
+      margin-top: -95px;
+    }
+
+    @media (min-width: @desktop-size) { 
+      width: 100px;
+      height: 100px;
+      top: 140px;
+      left: 52px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.aims {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: @tablet-size) {
+  .aims {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .aims {
+    width: 366px;
+    flex-wrap: wrap;
+    margin-bottom: 75px;
+  }
+}

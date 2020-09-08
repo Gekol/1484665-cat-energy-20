@@ -109,8 +109,6 @@ exports.js = js;
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**/*.js",
-    "source/*.html"
   ], {
     base: "source"
   })
@@ -167,9 +165,9 @@ exports.reload = sync.reload;
 
 const watcher = () => {
   gulp.watch("source/less/**/*.less", gulp.series("styles", "minStyles"));
-  gulp.watch("source/*.html").on("change", gulp.series("html"));
+  gulp.watch("source/*.html").on("change", gulp.series("html", "reload"));
   gulp.watch("source/js/**/*.js").on("change", gulp.series("js", "reload"));
-  gulp.watch("source/img/**/*.{png,jpg}", gulp.series("images", "webp", "reload"));
+  gulp.watch("source/img/**/*.{png,jpg,svg}", gulp.series("images", "webp", "sprite", "reload"));
 }
 
 exports.default = gulp.series(

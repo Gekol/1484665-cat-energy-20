@@ -13,23 +13,21 @@
 
 <body class="main-page">
   <header class="page-header page-element">
+    <div class="header-logo">
+      <a href="index.html" class="title">
+        <picture class="title-images">
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
+        </picture>
+      </a>
+      <div class="burger-menu">
+        <div class="burger-menu__layer first"></div>
+        <div class="burger-menu__layer second"></div>
+        <div class="burger-menu__layer third"></div>
+      </div>
+    </div>
     <ul class="menu">
-      <li class="menu__item">
-        <a href="index.html" class="title">
-          <picture class="title-images">
-            <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
-            <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
-            <svg class="title__text" width="101" height="18">
-              <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
-            </svg>
-          </picture>
-        </a>
-        <div class="burger-menu">
-          <div class="burger-menu__layer first"></div>
-          <div class="burger-menu__layer second"></div>
-          <div class="burger-menu__layer third"></div>
-        </div>
-      </li>
       <li class="menu__item">
         <a href="index.html" class="menu__link">Главная</a>
       </li>
@@ -46,20 +44,23 @@
       <h1 class="food__title">Каталог продукции</h1>
       <ul class="food__list">
         <li class="food__item">
-          <picture class="food__image">
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/hen-500-desktop.webp 1x, img/chicken-small-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/hen-500-desktop.webp 1x, img/chicken-small-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/hen-500.webp 1x, img/chicken-small-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)"
-              srcset="img/hen-500-desktop.png 1x, img/chicken-small-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/hen-500-desktop.png 1x, img/chicken-small-tablet@2x.png 2x">
-            <img src="img/hen-500.png" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Chicken small">
-          </picture>
+          <a href="hen.html">
+            <picture class="food__image">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/hen-500-desktop.webp 1x, img/chicken-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/hen-500-desktop.webp 1x, img/chicken-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/hen-500.webp 1x, img/chicken-small-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/hen-500-desktop.png 1x, img/chicken-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/hen-500-desktop.png 1x, img/chicken-small-tablet@2x.png 2x">
+              <img src="img/hen-500.png" srcset="img/chicken-small-mobile@2x.jpg 2x" alt="Chicken small">
+            </picture>
+          </a>
           <div class="food__info">
             <div class="food__description">
-              <h4 class="food__type">Cat Energy PRO 500 г</h4>
+              <h4 class="food__type"><a href="hen.html" class="food__type">Cat Energy PRO 500 г</a></h4>
               <div class="food-detail">
                 <span>Масса</span>
                 <span>500 г</span>
@@ -74,22 +75,25 @@
               </div>
             </div>
           </div>
-          <button class="food__order-button">Заказать</button>
+          <a href="popup.html" class="food__order-button">Заказать</a>
         </li>
         <li class="food__item">
-          <picture class="food__image">
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/hen-1000-desktop.webp 1x, img/chicken-big-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/hen-1000-desktop.webp 1x, img/chicken-big-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/hen-1000.webp 1x, img/chicken-big-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/hen-1000-desktop.png 1x, img/chicken-big-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/hen-1000-desktop.png 1x, img/chicken-big-tablet@2x.png 2x">
-            <img src="img/hen-1000.png" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Chicken big">
-          </picture>
+          <a href="big-hen.html">
+            <picture class="food__image food__image__big">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/hen-1000-desktop.webp 1x, img/chicken-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/hen-1000-desktop.webp 1x, img/chicken-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/hen-1000.webp 1x, img/chicken-big-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/hen-1000-desktop.png 1x, img/chicken-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/hen-1000-desktop.png 1x, img/chicken-big-tablet@2x.png 2x">
+              <img src="img/hen-1000.png" srcset="img/chicken-big-mobile@2x.jpg 2x" alt="Chicken big">
+            </picture>
+          </a>
           <div class="food__info">
             <div class="food__description">
-              <h4 class="food__type">Cat Energy PRO 1000 г</h4>
+              <h4 class="food__type"><a href="big-hen.html" class="food__type">Cat Energy PRO 1000 г</a></h4>
               <div class="food-detail">
                 <span>Масса</span>
                 <span>1000 г</span>
@@ -104,22 +108,25 @@
               </div>
             </div>
           </div>
-          <button class="food__order-button">Заказать</button>
+          <a href="popup.html" class="food__order-button">Заказать</a>
         </li>
         <li class="food__item">
-          <picture class="food__image">
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/fish-500-desktop.webp 1x, img/fish-small-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/fish-500-desktop.webp 1x, img/fish-small-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/fish-500.webp 1x, img/fish-small-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/fish-500-desktop.png 1x, img/fish-small-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/fish-500-desktop.png 1x, img/fish-small-tablet@2x.png 2x">
-            <img src="img/fish-500.png" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Fish small">
-          </picture>
+          <a href="fish.html">
+            <picture class="food__image">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/fish-500-desktop.webp 1x, img/fish-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/fish-500-desktop.webp 1x, img/fish-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/fish-500.webp 1x, img/fish-small-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/fish-500-desktop.png 1x, img/fish-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-500-desktop.png 1x, img/fish-small-tablet@2x.png 2x">
+              <img src="img/fish-500.png" srcset="img/fish-small-mobile@2x.jpg 2x" alt="Fish small">
+            </picture>
+          </a>
           <div class="food__info">
             <div class="food__description">
-              <h4 class="food__type">Cat Energy PRO 500 г</h4>
+              <h4 class="food__type"><a href="fish.html" class="food__type">Cat Energy PRO 500 г</a></h4>
               <div class="food-detail">
                 <span>Масса</span>
                 <span>500 г</span>
@@ -134,22 +141,24 @@
               </div>
             </div>
           </div>
-          <button class="food__order-button">Заказать</button>
+          <a href="popup.html" class="food__order-button">Заказать</a>
         </li>
         <li class="food__item">
-          <picture class="food__image">
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/fish-1000-desktop.webp 1x, img/fish-big-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/fish-1000-desktop.webp 1x, img/fish-big-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/fish-1000.webp 1x, img/fish-big-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/fish-1000-desktop.png 1x, img/fish-big-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/fish-1000-desktop.png 1x, img/fish-big-tablet@2x.png 2x">
-            <img src="img/fish-1000.png" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Fish big">
-          </picture>
+          <a href="big-fish.html">
+            <picture class="food__image food__image__big">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/fish-1000-desktop.webp 1x, img/fish-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/fish-1000-desktop.webp 1x, img/fish-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/fish-1000.webp 1x, img/fish-big-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/fish-1000-desktop.png 1x, img/fish-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/fish-1000-desktop.png 1x, img/fish-big-tablet@2x.png 2x">
+              <img src="img/fish-1000.png" srcset="img/fish-big-mobile@2x.jpg 2x" alt="Fish big">
+            </picture>
+          </a>
           <div class="food__info">
             <div class="food__description">
-              <h4 class="food__type">Cat Energy PRO 1000 г</h4>
+              <h4 class="food__type"><a href="big-fish.html" class="food__type">Cat Energy PRO 1000 г</a></h4>
               <div class="food-detail">
                 <span>Масса</span>
                 <span>1000 г</span>
@@ -164,24 +173,26 @@
               </div>
             </div>
           </div>
-          <button class="food__order-button">Заказать</button>
+          <a href="popup.html" class="food__order-button">Заказать</a>
         </li>
         <li class="food__item">
-          <picture class="food__image">
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/buckwheat-500-desktop.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/buckwheat-500-desktop.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/buckwheat-500.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)"
-              srcset="img/buckwheat-500-desktop.png 1x, img/buckwheat-small-desktop@2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/buckwheat-500-desktop.png 1x, img/buckwheat-small-tablet@2x.png 2x">
-            <img src="img/buckwheat-500.png" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Buckwheat small">
-          </picture>
+          <a href="buckwheat.html">
+            <picture class="food__image">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/buckwheat-500-desktop.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/buckwheat-500-desktop.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-500.webp 1x, img/buckwheat-small-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/buckwheat-500-desktop.png 1x, img/buckwheat-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-500-desktop.png 1x, img/buckwheat-small-tablet@2x.png 2x">
+              <img src="img/buckwheat-500.png" srcset="img/buckwheat-small-mobile@2x.jpg 2x" alt="Buckwheat small">
+            </picture>
+          </a>
           <div class="food__info">
             <div class="food__description">
-              <h4 class="food__type">Cat Energy SLIM 500 г</h4>
+              <h4 class="food__type"><a href="buckwheat.html" class="food__type">Cat Energy SLIM 500 г</a></h4>
               <div class="food-detail">
                 <span>Масса</span>
                 <span>500 г</span>
@@ -196,24 +207,26 @@
               </div>
             </div>
           </div>
-          <button class="food__order-button">Заказать</button>
+          <a href="popup.html" class="food__order-button">Заказать</a>
         </li>
         <li class="food__item">
-          <picture class="food__image">
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/buckwheat-1000-desktop.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/buckwheat-1000-desktop.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/buckwheat-1000.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)"
-              srcset="img/buckwheat-1000-desktop.png 1x, img/buckwheat-big-desktop@2x.png 2x">
-            <source media="(min-width: 768px)"
-              srcset="img/buckwheat-1000-desktop.png 1x, img/buckwheat-big-tablet@2x.png 2x">
-            <img src="img/buckwheat-1000.png" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Buckwheat big">
-          </picture>
+          <a href="big-buckwheat.html">
+            <picture class="food__image food__image__big">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/buckwheat-1000-desktop.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/buckwheat-1000-desktop.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/buckwheat-1000.webp 1x, img/buckwheat-big-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)"
+                srcset="img/buckwheat-1000-desktop.png 1x, img/buckwheat-big-desktop@2x.png 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/buckwheat-1000-desktop.png 1x, img/buckwheat-big-tablet@2x.png 2x">
+              <img src="img/buckwheat-1000.png" srcset="img/buckwheat-big-mobile@2x.jpg 2x" alt="Buckwheat big">
+            </picture>
+          </a>
           <div class="food__info">
             <div class="food__description">
-              <h4 class="food__type">Cat Energy SLIM 1000 г</h4>
+              <h4 class="food__type"><a href="big-buckwheat.html" class="food__type">Cat Energy SLIM 1000 г</a></h4>
               <div class="food-detail">
                 <span>Масса</span>
                 <span>1000 г</span>
@@ -228,22 +241,24 @@
               </div>
             </div>
           </div>
-          <button class="food__order-button">Заказать</button>
+          <a href="popup.html" class="food__order-button">Заказать</a>
         </li>
         <li class="food__item">
-          <picture class="food__image">
-            <source type="image/webp" media="(min-width: 1440px)"
-              srcset="img/rice-desktop.webp 1x, img/rice-small-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/rice-desktop.webp 1x, img/rice-small-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/rice.webp 1x, img/rice-small-mobile@2x.webp 2x">
-            <source media="(min-width: 1440px)" srcset="img/rice-desktop.png 1x, img/rice-small-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/rice-desktop.png 1x, img/rice-small-tablet@2x.png 2x">
-            <img src="img/rice.png" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Rice big">
-          </picture>
+          <a href="rice.html">
+            <picture class="food__image">
+              <source type="image/webp" media="(min-width: 1440px)"
+                srcset="img/rice-desktop.webp 1x, img/rice-small-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/rice-desktop.webp 1x, img/rice-small-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/rice.webp 1x, img/rice-small-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/rice-desktop.png 1x, img/rice-small-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/rice-desktop.png 1x, img/rice-small-tablet@2x.png 2x">
+              <img src="img/rice.png" srcset="img/rice-small-mobile@2x.jpg 2x" alt="Rice big">
+            </picture>
+          </a>
           <div class="food__info">
             <div class="food__description">
-              <h4 class="food__type">Cat Energy SLIM 500 г</h4>
+              <h4 class="food__type"><a href="rice.html" class="food__type">Cat Energy SLIM 500 г</a></h4>
               <div class="food-detail">
                 <span>Масса</span>
                 <span>500 г</span>
@@ -258,7 +273,7 @@
               </div>
             </div>
           </div>
-          <button class="food__order-button">Заказать</button>
+          <a href="popup.html" class="food__order-button">Заказать</a>
         </li>
         <li class="food__item show-more">
           <picture class="food__image show-more__image-block">
@@ -268,7 +283,7 @@
             <p class="show-more__title">Показать еще 100500 товаров</p>
             <p class="show-more__info">На самом деле вкусов гораздо больше!</p>
           </div>
-          <button class="food__order-button show-more__button">Показать все</button>
+          <a href="all.html" class="food__order-button show-more__button">Показать все</a>
         </li>
       </ul>
     </section>
@@ -322,15 +337,16 @@
             <source type="image/webp" srcset="img/icon-gift.webp">
             <img src="img/icon-gift.png" alt="Gift" width="78" height="80" class="gift__image">
           </picture>
-          <p class="gift__info">Закажите все<br> и получите чехол для кота в подарок!</p>
+          <p class="gift__info">Закажите все<br> и получите чехол для <br>кота в подарок!</p>
         </div>
       </div>
     </section>
   </main>
-  <footer class="footer-links page-element">
+  <footer class="footer-links page-element footer-links">
     <div class="container contacts-container contacts-container__brown">
-      <div class="contacts contacts__brown">
-        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+      <div class="contacts">
+        <div class="contacts__title"><span class="invite">Приглашаем</span> <span class="dealing">к сотрудничеству
+            дилеров!</span></div>
         <div class="contacts__block">
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
           <p class="contacts__city">Санкт-Петербург</p>

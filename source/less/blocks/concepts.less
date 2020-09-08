@@ -1,0 +1,190 @@
+.concepts {
+  box-sizing: border-box;
+}
+
+.concepts__title {
+  .set-font(36px, 40px);
+  font-weight: normal;
+  margin-bottom: 38px;
+}
+
+.concepts-list {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.concepts-list__item {
+  .set-font(14px, 18px, Arial);
+  color: @concept-color;
+  padding-left: 60px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: -20px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: @choose-program-color;
+    background-position: center;
+  }
+}
+
+.concepts-list__item__nutrients::before {
+  background-image: url("../img/advantage-leaf.png");
+  background-size: 30px 32px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 45px 47px;
+  }
+
+  @supports (background-image: url("../img/advantage-leaf.webp")) {
+    & {
+      background-image: url("../img/advantage-leaf.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advantage-leaf@2x.webp");
+      }
+    }
+  }
+}
+
+.concepts-list__item__powder::before {
+  background-image: url("../img/advantage-powder.png");
+  background-size: 29px 31px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-powder@2x.png");
+    background-size: 44px 46px;
+  }
+
+  @supports (background-image: url("../img/advantage-powder.webp")) {
+    & {
+      background-image: url("../img/advantage-powder.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advantage-powder@2x.webp");
+      }
+    }
+  }
+}
+
+.concepts-list__item__substitute::before {
+  background-image: url("../img/advantage-dining.png");
+  background-size: 23px 30px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-dining@2x.png");
+    background-size: 55px 55px;
+  }
+
+  @supports (background-image: url("../img/advantage-dining.webp")) {
+    & {
+      background-image: url("../img/advantage-dining.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advantage-dining@2x.webp");
+      }
+    }
+  }
+}
+
+.concepts-list__item__time::before {
+  background-image: url("../img/advantage-clock.png");
+  background-size: 32px 33px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantage-clock@2x.png");
+    background-size: 47px 48px;
+  }
+
+  @supports (background-image: url("../img/advantage-clock.webp")) {
+    & {
+      background-image: url("../img/advantage-clock.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/advantage-clock@2x.webp");
+      }
+    }
+  }
+}
+
+.set-num(@index) when (@index > 0) {
+  .concepts-list__item:nth-child(@{index})::after {
+    content: "@{index}";
+    .set-font-equal(280px);
+    color: @facility-background;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    z-index: -1;
+  }
+  .set-num(@index - 1);
+}
+
+@media (min-width: @tablet-size) {
+  .concepts__title {
+    .set-font-equal(60px);
+    margin-top: 45px;
+    margin-bottom: 70px;
+  }
+
+  .concepts-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 75px;
+    margin-bottom: 0;
+  }
+
+  .concepts-list__item {
+    .set-font(16px, 24px, Arial);
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 38px;
+    min-height: 280px;
+    max-width: 249px;
+
+    &::before {
+      position: relative;
+      width: 80px;
+      height: 80px;
+      left: 0;
+      margin-bottom: 35px;
+    }
+  }
+
+  .set-num(4);
+}
+
+@media (min-width: @desktop-size) {
+  .concepts__title {
+    margin: 71px 0;
+  }
+
+  .concepts {
+    border: none;
+    box-sizing: border-box;
+  }
+
+  .concepts-list {
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+  }
+}

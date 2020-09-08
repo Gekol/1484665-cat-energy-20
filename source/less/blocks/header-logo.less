@@ -1,0 +1,30 @@
+.header-logo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 11px 20px 17px;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 101px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50.5px;
+    background-image: url("../img/sprite-logo-footer.svg");
+    background-repeat: no-repeat;
+    top: 24px;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .header-logo {
+    padding: 0;
+    width: fit-content;
+    &::after {
+      display: none;
+    }
+  }
+}

@@ -13,23 +13,21 @@
 
 <body class="main-page">
   <header class="page-header page-element">
+    <div class="header-logo">
+      <a href="index.html" class="title">
+        <picture class="title-images">
+          <source srcset="img/logo-desktop.svg" media="(min-width: 1440px)">
+          <source srcset="img/logo-tablet.svg" media="(min-width: 768px)">
+          <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
+        </picture>
+      </a>
+      <div class="burger-menu">
+        <div class="burger-menu__layer first"></div>
+        <div class="burger-menu__layer second"></div>
+        <div class="burger-menu__layer third"></div>
+      </div>
+    </div>
     <ul class="menu">
-      <li class="menu__item">
-        <a href="index.html" class="title">
-          <picture class="title-images">
-            <source srcset="img/logo-desktop.svg" media="(min-width: 768px)">
-            <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
-            <svg class="title__text" width="101" height="18">
-              <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
-            </svg>
-          </picture>
-        </a>
-        <div class="burger-menu">
-          <div class="burger-menu__layer first"></div>
-          <div class="burger-menu__layer second"></div>
-          <div class="burger-menu__layer third"></div>
-        </div>
-      </li>
       <li class="menu__item">
         <a href="index.html" class="menu__link">Главная</a>
       </li>
@@ -80,7 +78,7 @@
         <h3 class="form-section__subtitle form-section__subtitle__master-title">Контактные данные (владельца кота)</h3>
         <div class="contact-data">
           <div class="program-form__block contact-data__block contact-data__block__email">
-            <label for="email" class="program-form__label program-form__label__email">Email:*</label>
+            <label for="email" class="program-form__label program-form__label__email">E-mail:*</label>
             <input type="email" id="email" class="program-form__input program-form__input__email"
               value="kuklachev@gmail.com" required>
           </div>
@@ -113,7 +111,7 @@
           </div>
         </div>
       </section>
-      <section class="program-form__section  program-form__submit-block">
+      <section class="program-form__section  program-form__section__submit-block">
         <input type="submit" class="program-form__submit" value="отправить заявку">
         <p class="program-form__required_info">* — Обязательные поля</p>
       </section>
@@ -121,8 +119,9 @@
   </main>
   <footer class="footer-links page-element">
     <div class="container contacts-container contacts-container__brown">
-      <div class="contacts contacts__brown">
-        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+      <div class="contacts">
+        <div class="contacts__title"><span class="invite">Приглашаем</span> <span class="dealing">к сотрудничеству
+            дилеров!</span></div>
         <div class="contacts__block">
           <p class="contacts__address">ул. Большая Конюшенная, д. 19/8</p>
           <p class="contacts__city">Санкт-Петербург</p>

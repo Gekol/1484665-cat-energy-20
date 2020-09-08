@@ -1,0 +1,48 @@
+.cat-image {
+  position: absolute;
+  width: 36px;
+  height: 50px;
+  top: 25px;
+  left: 29px;
+
+  &__get-weight {
+    width: 67px;
+    height: 28px;
+    top: 39px;
+    left: 13px;
+  }
+}
+
+@media(min-width: @tablet-size) {
+  .cat-image {
+    width: 140px;
+    height: 192px;
+    left: unset;
+    right: 92px;
+    top: 50%;
+    margin-top: -105px;
+
+    &__get-weight {
+      width: 268px;
+      height: 112px;
+      right: 28px;
+      margin-top: -52px;
+    }
+  }
+}
+
+@media(min-width: @desktop-size) {
+  .cat-image {
+    width: 70px;
+    height: 97px;
+    top: 145px;
+    left: 68px;
+
+    &__get-weight {
+      width: 134px;
+      height: 56px;
+      top: 120px;
+      left: 33px;
+    }
+  }
+}

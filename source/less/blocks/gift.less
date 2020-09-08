@@ -1,0 +1,116 @@
+.gift {
+  min-width: 230px;
+  min-height: 289px;
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  margin-top: 22px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  @supports (background-image: url("../img/gift-photo-mobile.webp")) {
+    & {
+      background-image: url("../img/gift-photo-mobile.webp");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/gift-photo-mobile@2x.webp");
+      }
+    }
+  }
+}
+
+.gift__image {
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  margin-left: -39px;
+  top: 60px;
+}
+
+.gift__info {
+  color: @white-color;
+  position: absolute;
+  width: fit-content;
+  top: 173px;
+  left: 50%;
+  margin-left: -80px;
+  text-align: center;
+  .set-font(16px, 20px, Arial);
+}
+
+@media (min-width: @tablet-size) {
+  .gift {
+    background: url("../img/gift-photo-tablet.png") no-repeat;
+    min-height: 208px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+      background-size: 100% 200px;
+    }
+
+    @supports (background-image: url("../img/gift-photo-tablet.webp")) {
+      & {
+        background-image: url("../img/gift-photo-tablet.webp");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/gift-photo-tablet@2x.webp");
+        }
+      }
+    }
+  }
+
+  .gift__image {
+    left: 120px;
+    top: 58px;
+  }
+
+  .gift__info {
+    right: 124px;
+    left: unset;
+    top: 58px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .gift {
+    background-image: url("../img/gift-photo-desktop.jpg");
+    width: 245px;
+    min-height: 289px;
+    margin-left: 79px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px 289px;
+    }
+
+    @supports (background-image: url("../img/gift-photo-desktop.webp")) {
+      & {
+        background-image: url("../img/gift-photo-desktop.webp");
+
+        @media (min-resolution: 2dppx) {
+          background-image: url("../img/gift-photo-desktop@2x.webp");
+        }
+      }
+    }
+  }
+
+  .gift__image {
+    top: 58px;
+    left: 50%;
+  }
+
+  .gift__info {
+    margin: 0;
+    text-align: center;
+    margin-left: -80px;
+    top: 188px;
+    left: 50%;
+  }
+}

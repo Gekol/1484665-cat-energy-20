@@ -1,0 +1,27 @@
+.page-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+  border-bottom: 1px solid @footer-block-border-color;
+}
+
+@media (min-width: @tablet-size) {
+  .page-header {
+    width: calc(100% - 60px);
+    flex-wrap: nowrap;
+    border: none;
+    margin: 0 30px;
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .page-header {
+    width: 1220px;
+    padding-top: 54px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,141 @@
+.additional-goods {
+  padding-bottom: 35px;
+}
+
+.additional-goods__title {
+  width: fit-content;
+  .set-font-equal(24px);
+  font-weight: normal;
+  margin-top: 28px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: calc(100% + 22px);
+    width: 100vw;
+    height: 3px;
+    background-color: @choose-program-color;
+    display: block;
+  }
+}
+
+.additional-goods__list {
+  padding: 0;
+  list-style-type: none;
+  margin-top: 13px;
+}
+
+.additional-goods__item {
+  border-top: 1px solid @footer-block-border-color;
+
+  &:last-child {
+    border-bottom: 1px solid @footer-block-border-color;
+  }
+}
+
+.additional-goods__type {
+  .set-font-equal(16px);
+  text-transform: uppercase;
+  color: @food-type-color;
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+@media (min-width: @tablet-size) {
+  .additional-goods__title {
+    .set-font-equal(36px);
+    margin-top: 68px;
+    margin-bottom: 78px;
+    padding-left: 37px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 3px;
+      background-color: @choose-program-color;
+      right: calc(100% + 3px);
+      top: 20px;
+      margin-bottom: -2px;
+      width: 100vh;
+    }
+
+    &::after {
+      top: 20px;
+    }
+  }
+
+  .additional-goods {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 65px;
+  }
+
+  .additional-goods__list {
+    margin-bottom: 69px;
+    margin-top: 0;
+  }
+
+  .additional-goods__item {
+    border: 1px solid @bar-border-color;
+    padding: 23px 37px 12px 38px;
+  }
+
+  .additional-goods__item-block {
+    display: flex;
+  }
+
+  .additional-goods__type {
+    .set-font-equal(20px);
+    margin: 0;
+    flex-grow: 2;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .additional-goods {
+    padding-bottom: 84px;
+  }
+
+  .additional-goods__list {
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .additional-goods__title {
+    padding-left: 0;
+    margin-top: 76px;
+    margin-bottom: 78px;
+
+    &::before {
+      right: calc(100% + 40px);
+    }
+  }
+
+  .additional-goods__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    min-height: 72px;
+    border-left: none;
+    border-right: none;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .additional-goods__item-block {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .additional-goods__type {
+    flex-grow: 0;
+    min-width: 161px;
+  }
+}
