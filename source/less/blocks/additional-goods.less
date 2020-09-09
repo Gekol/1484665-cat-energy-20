@@ -71,7 +71,7 @@
   .additional-goods {
     display: flex;
     flex-direction: column;
-    padding-bottom: 65px;
+    padding-bottom: 69px;
   }
 
   .additional-goods__list {
@@ -81,7 +81,7 @@
 
   .additional-goods__item {
     border: 1px solid @bar-border-color;
-    padding: 23px 37px 12px 38px;
+    padding: 26px 37px 27px 38px;
   }
 
   .additional-goods__item-block {
@@ -97,7 +97,7 @@
 
 @media (min-width: @desktop-size) {
   .additional-goods {
-    padding-bottom: 84px;
+    padding-bottom: 88px;
   }
 
   .additional-goods__list {
@@ -123,6 +123,7 @@
     min-height: 72px;
     border-left: none;
     border-right: none;
+    box-sizing: border-box;
 
     &:not(:last-child) {
       border-bottom: none;
@@ -132,10 +133,12 @@
   .additional-goods__item-block {
     width: 100%;
     justify-content: space-between;
+    padding-top: 5px;
   }
 
   .additional-goods__type {
     flex-grow: 0;
     min-width: 161px;
+    margin-right: 163px;
   }
 }

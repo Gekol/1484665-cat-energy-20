@@ -1,0 +1,39 @@
+.example-expenses-tablet {
+  display: none;
+}
+
+@media (min-width: @tablet-size) {
+  .example-expenses-tablet {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    .set-font-equal(20px);
+    text-transform: uppercase;
+    text-align: end;
+  }
+
+  .example-expenses-tablet__info {
+    margin: 0;
+  }
+
+  .example-expenses-tablet__price {
+    margin: 0;
+    margin-top: 9px;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .example-expenses-tablet {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 39px;
+    align-items: center;
+  }
+
+  .example-expenses-tablet__price {
+    margin: 0;
+  }
+}

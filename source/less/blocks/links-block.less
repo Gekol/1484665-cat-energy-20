@@ -1,0 +1,19 @@
+.links-block {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid @footer-block-border-color;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .links-block {
+    width: fit-content;
+
+    &:not(:last-child) {
+      border: none;
+    }
+  }
+}

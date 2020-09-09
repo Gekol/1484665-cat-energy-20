@@ -27,7 +27,7 @@
 .additional-good__checkbox {
   display: none;
 
-  &:checked+.additional-good__label::before {
+  &:checked + .additional-good__label::before {
     content: "";
     display: block;
     width: 26px;
@@ -41,13 +41,6 @@
 }
 
 @media (min-width: @tablet-size) {
-  .additional_good_choices {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 65px;
-  }
-
   .additional-good {
     min-width: 221px;
     margin-bottom: 20px;
@@ -64,7 +57,7 @@
   }
 
   .additional-good__checkbox {
-    &:checked+.additional-good__label::before {
+    &:checked + .additional-good__label::before {
       left: 13px;
       top: 15px;
     }
@@ -86,7 +79,7 @@
   }
 
   .additional-good__checkbox {
-    &:checked+.additional-good__label::before {
+    &:checked + .additional-good__label::before {
       left: 11px;
       top: 12px;
     }

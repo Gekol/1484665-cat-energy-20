@@ -3,32 +3,6 @@
   grid-column-end: -1;
 }
 
-.program-form__section {
-  border: none;
-  padding: 20px 20px 20px;
-  margin: 0;
-  
-  &__submit-block {
-    padding-top: 14px;
-    padding-bottom: 0;
-  }
-}
-
-.program-form__section__personal-info {
-  border-bottom: 1px solid @footer-block-border-color;
-}
-
-.program-form__block {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-
-  &:not(:last-child) {
-    margin-bottom: 13px;
-  }
-}
-
 .program-form__title {
   .set-font-equal(36px);
   margin-top: 27px;
@@ -65,8 +39,10 @@
   flex-grow: 1;
   border: 1px solid @input-border-color;
 
-  &__phone, &__email {
+  &__phone,
+  &__email {
     padding-left: 14px;
+
     &:active,
     &:focus {
       padding-left: 13px;
@@ -111,6 +87,7 @@
 }
 
 .program-form__required_info {
+  .set-font(14px, 16px, Arial);
   text-align: center;
   margin: 0;
   margin-bottom: 32px;
@@ -154,7 +131,8 @@
     height: 52px;
     margin-left: 14px;
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
       padding-left: 10px;
     }
 
@@ -167,7 +145,8 @@
   .program-form__input__email {
     padding-left: 16px;
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
       padding-left: 15px;
     }
   }
@@ -175,41 +154,10 @@
   .program-form__input__phone {
     padding-left: 9px;
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
       padding-left: 8px;
     }
-  }
-
-  .program-form__block {
-    &:not(:last-child) {
-      margin-bottom: 20px;
-    }
-  }
-
-  .program-form__section {
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 70px;
-    margin-right: 67px;
-  }
-
-  .program-form__section__personal-info {
-    padding-top: 18px;
-    padding-bottom: 72px;
-  }
-
-  .program-form__section__aim-info {
-    border: 1px solid @input-border-color;
-    border-top: none;
-    box-sizing: border-box;
-    padding: 27px 28px;
-    margin-bottom: -15px;
-  }
-
-  .program-form__section__submit-block {
-    display: flex;
-    justify-content: space-between;
-    height: 121px;
   }
 
   .program-form__submit {
@@ -241,7 +189,8 @@
     height: 50px;
     padding-left: 24px;
 
-    &:active, &:focus {
+    &:active,
+    &:focus {
       padding-left: 23px;
     }
   }
@@ -252,12 +201,6 @@
     margin-bottom: 57px;
   }
 
-  .program-form__block {
-    &:not(:last-child) {
-      margin-bottom: 21px;
-    }
-  }
-
   .program-form__aim {
     margin-left: 60px;
   }
@@ -266,28 +209,6 @@
     padding: 0;
     margin-bottom: 47px;
     margin-top: 57px;
-  }
-
-  .program-form__section {
-    margin: 0;
-    padding-top: 20px;
-    height: unset;
-  }
-
-  .program-form__section__personal-info {
-    border: none;
-    min-width: 569px;
-    margin-right: 79px;
-    padding-bottom: 22px;
-  }
-
-  .program-form__section__aim-info {
-    display: flex;
-    flex-direction: column;
-    padding: 26px 28px 21px;
-    flex-grow: 2;
-    border: 1px solid @input-border-color;
-    min-height: 200px;
   }
 
   .program-form__submit {

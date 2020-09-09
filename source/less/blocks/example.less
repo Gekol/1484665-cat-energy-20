@@ -5,10 +5,6 @@
   padding-top: 14px;
 }
 
-.example__title-block {
-  padding-top: 14px;
-}
-
 .example__title {
   .set-font(36px, 40px);
   margin-bottom: 33px;
@@ -22,17 +18,6 @@
   margin-bottom: 25px;
 }
 
-.example-expenses-mobile {
-  text-align: center;
-  .set-font(14px, 20px);
-  text-transform: uppercase;
-  margin: 29px 0 39px;
-}
-
-.example-expenses-tablet {
-  display: none;
-}
-
 @media (min-width: @tablet-size) {
   .example {
     .set-font(16px, 24px);
@@ -40,10 +25,6 @@
     padding: 0;
     background-color: @white-color;
     margin-top: -30px;
-  }
-
-  .example__title-block {
-    padding-top: 43px;
   }
 
   .example__title {
@@ -56,29 +37,6 @@
     .set-font(16px, 24px, Arial);
     margin-bottom: 51px;
   }
-
-  .example-expenses-mobile {
-    display: none;
-  }
-
-  .example-expenses-tablet {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    .set-font-equal(20px);
-    text-transform: uppercase;
-    text-align: end;
-  }
-
-  .example-expenses-tablet__info {
-    margin: 0;
-  }
-
-  .example-expenses-tablet__price {
-    margin: 0;
-    margin-top: 9px;
-  }
 }
 
 @media (min-width: @desktop-size) {
@@ -90,46 +48,13 @@
     border: none;
   }
 
-  .example-container {
-    position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      height: 100%;
-      width: 100vw;
-      background-color: @example-background-color;
-      position: absolute;
-      top: 0;
-      left: calc(100% - 285px);
-    }
-  }
-
   .example__title {
     margin-bottom: 77px;
-  }
-
-  .example__title-block {
-    background-color: @white-color;
-    padding-top: 23px;
   }
 
   .example__info {
     padding-top: 70px;
     width: 436px;
     margin-bottom: 68px;
-  }
-
-  .example-expenses-tablet {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0;
-    padding-right: 39px;
-    align-items: center;
-  }
-
-  .example-expenses-tablet__price {
-    margin: 0;
   }
 }

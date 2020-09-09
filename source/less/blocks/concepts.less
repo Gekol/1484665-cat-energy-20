@@ -170,6 +170,10 @@
   }
 
   .set-num(4);
+
+  .concepts-list__item:first-child::after {
+    right: 20px;
+  }
 }
 
 @media (min-width: @desktop-size) {
@@ -186,5 +190,9 @@
     justify-content: space-between;
     padding: 0;
     margin: 0;
+  }
+
+  .concepts-list__item__time {
+    margin-right: -5px;
   }
 }

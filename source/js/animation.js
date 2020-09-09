@@ -44,17 +44,33 @@ if (programFormSubmitButton != null) {
 
 function hideCat(event) {
   fatCat.style.width = (width * (100 - rangeInput.value) / 100) + "px";
-  fatCat.style.left = "calc(50% - " + width + "px/2 + 23px)";
+  fatCat.style.left = "calc(50% - " + leftDistance + "px)";
   slimCat.style.width = (width * rangeInput.value / 100) + "px";
-  slimCat.style.right = "calc(50% - " + width + "px/2 - 23px)";
+  slimCat.style.right = "calc(50% - " + rightDistance + "px)";
   slimCat.children[slimCat.children.length - 1].style.position = "relative";
   slimCat.children[slimCat.children.length - 1].style.right = width * (100 - rangeInput.value) / 100 + "px";
 }
 
-let rangeInput = document.querySelector(".bar-block");
+let rangeInput = document.querySelector(".bar__block");
 let fatCat = document.querySelector(".cat__before");
 let slimCat = document.querySelector(".cat__after");
-let width = window.innerWidth < 768?320:730;
+let width = 0;
+let leftDistance = 0;
+let rightDistance = 0;
+
+if (window.innerWidth < 768) {
+  width = 320;
+  leftDistance = 160;
+  rightDistance = 160;
+} else if (window.innerWidth < 1440) {
+  width = 672;
+  leftDistance = 336;
+  rightDistance = 336;
+} else {
+  width = 730;
+  leftDistance = 342;
+  rightDistance = 387.5;
+}
 
 if (rangeInput != null) {
   if (window.innerWidth < 768) {
@@ -94,16 +110,12 @@ if (showMoreButton != null) {
     goods.forEach(elem => {
       elem.style.display = "flex";
     });
-    let showMoreBlock = document.querySelector(".food__item.show-more");
-    showMoreBlock.style.display = "none";
   });
 }
 
 let phoneInput = document.querySelector(".program-form__input__phone");
 if (phoneInput != null) {
-  console.log(phoneInput);
   phoneInput.addEventListener("change", function(event) {
-    console.log(phoneInput.value);
     console.log(/^\d+{8}$/.test(phoneInput.value) );
     if (/^\d+{8}$/.test(phoneInput.value) != true) {
       phoneInput.parentElement.classList.add("contact-data__block__phone__error");
@@ -115,9 +127,8 @@ if (phoneInput != null) {
   });
 }
 
-let emailInput = document.querySelector(".program-form__input__email");
+let emailInput = document.querySelector(".program-form__input__name");
 if (emailInput != null) {
-  console.log(emailInput);
   emailInput.addEventListener("change", function(event) {
     if (/@/.test(emailInput.value) != true) {
       emailInput.parentElement.classList.add("contact-data__block__email__error");
@@ -125,6 +136,40 @@ if (emailInput != null) {
     } else {
       emailInput.parentElement.classList.remove("contact-data__block__email__error");
       emailInput.classList.remove("program-form__input__error");
+    }
+  });
+}
+
+let nameInput = document.querySelector(".program-form__input__name");
+if (emailInput != null) {
+  nameInput.addEventListener("change", function(event) {
+    if (/^[a-zA-Zа-яА-Я]+$/.test(nameInput.value) != true) {
+      nameInput.classList.add("program-form__input__error");
+    } else {
+      nameInput.classList.remove("program-form__input__error");
+    }
+  });
+}
+
+let ageInput = document.querySelector(".program-form__input__age");
+console.log(ageInput);
+if (ageInput != null) {
+  ageInput.addEventListener("change", function(event) {
+    if (/^\d+$/.test(ageInput.value) != true) {
+      ageInput.classList.add("program-form__input__error");
+    } else {
+      ageInput.classList.remove("program-form__input__error");
+    }
+  });
+}
+
+let weightInput = document.querySelector(".program-form__input__weight");
+if (weightInput != null) {
+  weightInput.addEventListener("change", function(event) {
+    if (/^\d+$/.test(ageInput.value) != true) {
+      weightInput.classList.add("program-form__input__error");
+    } else {
+      weightInput.classList.remove("program-form__input__error");
     }
   });
 }

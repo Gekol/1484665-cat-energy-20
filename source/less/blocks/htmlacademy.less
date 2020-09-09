@@ -6,6 +6,18 @@
   .set-font(16px, 18px, Arial);
 }
 
+.htmlacademy__logo {
+  fill: @htmlacademy-fill-color;
+
+  &:hover {
+    fill: @choose-program-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
 .htmlacademy__link {
   color: @concept-color;
   text-decoration: none;
@@ -25,17 +37,6 @@
 @media (min-width: @desktop-size) {
   .htmlacademy__link {
     &:active {
-      opacity: 0.3;
-    }
-  }
-
-  .htmlacademy__logo {
-    &:hover {
-      fill: @choose-program-color;
-    }
-
-    &:active {
-      fill: @choose-program-color;
       opacity: 0.3;
     }
   }

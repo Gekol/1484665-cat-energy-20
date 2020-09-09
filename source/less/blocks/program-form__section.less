@@ -1,0 +1,66 @@
+.program-form__section {
+  border: none;
+  padding: 20px 20px 20px;
+  margin: 0;
+
+  &__submit-block {
+    padding-top: 14px;
+    padding-bottom: 0;
+  }
+
+  &__personal-info {
+    border-bottom: 1px solid @footer-block-border-color;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .program-form__section {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 70px;
+    margin-right: 67px;
+  }
+
+  .program-form__section__personal-info {
+    padding-top: 18px;
+    padding-bottom: 72px;
+  }
+
+  .program-form__section__aim-info {
+    border: 1px solid @input-border-color;
+    border-top: none;
+    box-sizing: border-box;
+    padding: 27px 28px;
+    margin-bottom: -15px;
+  }
+
+  .program-form__section__submit-block {
+    display: flex;
+    justify-content: space-between;
+    height: 124px;
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .program-form__section {
+    margin: 0;
+    padding-top: 20px;
+    height: unset;
+  }
+
+  .program-form__section__personal-info {
+    border: none;
+    min-width: 569px;
+    margin-right: 79px;
+    padding-bottom: 22px;
+  }
+
+  .program-form__section__aim-info {
+    display: flex;
+    flex-direction: column;
+    padding: 26px 28px 21px;
+    flex-grow: 2;
+    border: 1px solid @input-border-color;
+    min-height: 200px;
+  }
+}

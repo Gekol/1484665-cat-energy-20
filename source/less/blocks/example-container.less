@@ -1,0 +1,16 @@
+@media (min-width: @desktop-size) {
+  .example-container {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100vw;
+      background-color: @example-background-color;
+      position: absolute;
+      top: 0;
+      left: calc(100% - 285px);
+    }
+  }
+}

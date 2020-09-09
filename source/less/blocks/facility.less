@@ -46,6 +46,12 @@
     align-self: center;
     margin-left: 15px;
   }
+
+  &:hover::after {
+    width: 32px;
+    height: 10px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat;
+  }
 }
 
 @media (min-width: @tablet-size) {
@@ -64,14 +70,22 @@
     border: none;
     margin-left: 32px;
     position: absolute;
-    bottom: 53px;
+    bottom: 55px;
     padding: 0;
+
+    &::after {
+      margin-left: 25px;
+    }
   }
 
   .facility__description {
     .set-font(16px, 24px, Arial);
-    max-width: 53%;
+    width: calc(100% - 290px);
     margin-left: 32px;
+
+    &__get-weight {
+      width: calc(100% - 324px);
+    }
   }
 }
 
@@ -102,5 +116,6 @@
 
   .facility__description {
     max-width: 100%;
+    width: unset;
   }
 }

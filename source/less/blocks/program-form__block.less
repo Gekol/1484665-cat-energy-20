@@ -1,0 +1,26 @@
+.program-form__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+@media (min-width: @tablet-size) {
+  .program-form__block {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (min-width: @desktop-size) {
+  .program-form__block {
+    &:not(:last-child) {
+      margin-bottom: 21px;
+    }
+  }
+}
