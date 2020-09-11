@@ -116,6 +116,22 @@
       opacity: 0.24;
       position: absolute;
     }
+
+
+    &:hover {
+      &::after {
+        border: none;
+        height: 1px;
+        background-color: @black-color;
+        opacity: 0.4;
+      }
+    }
+
+    &:active {
+      &::after {
+        border: none;
+      }
+    }
   }
 }
 

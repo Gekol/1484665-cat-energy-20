@@ -72,6 +72,7 @@
 .food-detail {
   display: flex;
   justify-content: space-between;
+  color: @concept-color;
   .set-font(12px, 16px, Arial);
 }
 
@@ -91,6 +92,14 @@
   box-sizing: border-box;
   margin-top: 22px;
   margin-bottom: 25px;
+
+  &:hover {
+    background-color: @choose-program-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (min-width: @tablet-size) {

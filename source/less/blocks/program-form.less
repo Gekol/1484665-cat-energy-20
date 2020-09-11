@@ -84,6 +84,15 @@
   padding-top: 6px;
   padding-bottom: 6px;
   border: none;
+  outline: none;
+
+  &:hover {
+    background-color: @choose-program-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .program-form__required_info {
@@ -187,11 +196,22 @@
 
   .program-form__input {
     height: 50px;
-    padding-left: 24px;
+    margin-left: 20px;
+    padding-left: 15px;
 
     &:active,
     &:focus {
-      padding-left: 23px;
+      padding-left: 15px;
+    }
+
+    &__email,
+    &__phone {
+      padding-left: 18px;
+
+      &:active,
+      &:focus {
+        padding-left: 17px;
+      }
     }
   }
 

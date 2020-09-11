@@ -20,11 +20,11 @@
           <img src="img/logo-mobile.svg" class="title__logo" alt="Cat energy">
         </picture>
       </a>
-      <div class="burger-menu">
-        <div class="burger-menu__layer first"></div>
-        <div class="burger-menu__layer second"></div>
-        <div class="burger-menu__layer third"></div>
-      </div>
+      <button class="burger-menu" type="button" aria-label="burger-menu">
+        <span class="burger-menu__layer first"></span>
+        <span class="burger-menu__layer second"></span>
+        <span class="burger-menu__layer third"></span>
+      </button>
     </div>
     <ul class="menu">
       <li class="menu__item current-page">
@@ -143,11 +143,11 @@
             <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="After">
           </picture>
         </div>
-        <form action="/" class="bar">
-          <button class="bar__button bar__button__before">Было</button>
+        <div class="bar">
+          <button class="bar__button bar__button__before" type="button">Было</button>
           <input type="range" class="bar__block" min="0" max="100" value="50">
-          <button class="bar__button bar__button__after">Стало</button>
-        </form>
+          <button class="bar__button bar__button__after" type="button">Стало</button>
+        </div>
       </div>
     </section>
   </main>
@@ -174,21 +174,21 @@
     </picture>
     <div class="links">
       <div class="links-container container">
-        <div class="logo links-block">
+        <a href="/" class="logo links-block">
           <svg class="footer-links__map" width="128" height="24" viewBox="0 0 128 24" fill="none">
             <use xlink:href="img/sprites.svg#sprite-logo-footer"></use>
           </svg>
-        </div>
+        </a>
         <div class="networks links-block">
           <ul class="networks-list">
-            <li><a href="https://vk.com/" class="networks__item networks__item__vk"></a></li>
-            <li><a href="https://www.instagram.com/" class="networks__item networks__item__insta"></a></li>
-            <li><a href="https://www.facebook.com/" class="networks__item networks__item__facebook"></a></li>
+            <li><a href="https://vk.com/" class="networks__item networks__item__vk" aria-label="vk"></a></li>
+            <li><a href="https://www.instagram.com/" class="networks__item networks__item__insta" aria-label="instagram"></a></li>
+            <li><a href="https://www.facebook.com/" class="networks__item networks__item__facebook" aria-label="facebook"></a></li>
           </ul>
         </div>
         <div class="htmlacademy links-block">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="htmlacademy__link">HTML Academy</a>
-          <a href="https://htmlacademy.ru/intensive/adaptive">
+          <a href="https://htmlacademy.ru/intensive/adaptive" aria-label="htmlacademy">
             <svg class="htmlacademy__logo" width="27" height="34">
               <use xlink:href="img/sprites.svg#sprite-htmlacademy-logo"></use>
             </svg>

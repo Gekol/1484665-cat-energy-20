@@ -96,7 +96,7 @@ if (rangeInput != null) {
   }
 }
 
-let popupButtons = document.querySelectorAll(".food__order-button");
+let popupButtons = document.querySelectorAll(".food__order-button, .additional-order-button");
 popupButtons.forEach(elem => {
   elem.addEventListener("click", function(event) {
     event.preventDefault();
@@ -173,3 +173,15 @@ if (weightInput != null) {
     }
   });
 }
+
+let additionalGoods = document.querySelectorAll(".additional-good__label");
+additionalGoods.forEach(elem => {
+  elem.addEventListener("keydown", function(event) {
+    console.log(event.keyCode);
+    if (event.keyCode == 13) {
+      let inputCheckbox = elem.previousElementSibling;
+      console.log(inputCheckbox);
+      inputCheckbox.checked = !inputCheckbox.checked;
+    }
+  });
+})

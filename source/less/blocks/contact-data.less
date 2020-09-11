@@ -45,16 +45,19 @@
 @media (min-width: @desktop-size) {
   .contact-data {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
   .contact-data__block {
-    min-width: 486px;
+    display: flex;
+    justify-content: space-between;
+    width: 569px;
+    flex-grow: unset;
     margin-bottom: 20px;
-    flex-grow: 1;
-  }
 
-  .contact-data__block__email {
-    margin-right: 95px;
+    &__phone {
+      width: 572px;
+    }
   }
 }
