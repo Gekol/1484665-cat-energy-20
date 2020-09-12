@@ -174,7 +174,7 @@ if (weightInput != null) {
   });
 }
 
-let additionalGoods = document.querySelectorAll(".additional-good__label");
+let additionalGoods = document.querySelectorAll(".additional-good__label, .program-form__aim");
 additionalGoods.forEach(elem => {
   elem.addEventListener("keydown", function(event) {
     console.log(event.keyCode);
