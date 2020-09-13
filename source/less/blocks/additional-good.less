@@ -10,11 +10,13 @@
     box-sizing: border-box;
   }
 
-  &:hover::before {
+  &:hover::before,
+  &:focus-within::before {
     border-color: @bar-border-color-hover;
   }
 
   &:active {
+    border-color: @bar-border-color;
     opacity: 0.3;
   }
 }
@@ -22,6 +24,10 @@
 .additional-good__label {
   flex-grow: 1;
   margin-left: 16px;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .additional-good__checkbox {

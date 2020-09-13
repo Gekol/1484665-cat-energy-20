@@ -70,6 +70,10 @@
   &:not(:last-child) {
     margin-bottom: 19px;
   }
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .program-form__submit {
@@ -212,9 +216,10 @@
         padding-left: 17px;
       }
     }
-    
+
     &__phone {
       padding-left: 15px;
+
       &:active,
       &:focus {
         padding-left: 14px;

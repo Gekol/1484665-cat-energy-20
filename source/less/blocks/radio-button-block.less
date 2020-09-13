@@ -18,6 +18,15 @@
     top: 1px;
     box-sizing: border-box;
   }
+
+  &:hover::before,
+  &:focus-within::before {
+    border-color: @bar-border-color-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-size) {
@@ -30,14 +39,6 @@
 
     &:not(:last-child) {
       margin-bottom: 24px;
-    }
-
-    &:hover::before {
-      border-color: @bar-border-color-hover;
-    }
-
-    &:active {
-      opacity: 0.3;
     }
   }
 }
