@@ -116,8 +116,7 @@ if (showMoreButton != null) {
 let phoneInput = document.querySelector(".program-form__input__phone");
 if (phoneInput != null) {
   phoneInput.addEventListener("change", function(event) {
-    console.log(/^\d+{8}$/.test(phoneInput.value) );
-    if (/^\d+{8}$/.test(phoneInput.value) != true) {
+    if (/^\d{8}$/.test(phoneInput.value) != true) {
       phoneInput.parentElement.classList.add("contact-data__block__phone__error");
       phoneInput.classList.add("program-form__input__error");
     } else {
@@ -152,7 +151,6 @@ if (emailInput != null) {
 }
 
 let ageInput = document.querySelector(".program-form__input__age");
-console.log(ageInput);
 if (ageInput != null) {
   ageInput.addEventListener("change", function(event) {
     if (/^\d+$/.test(ageInput.value) != true) {
@@ -174,14 +172,62 @@ if (weightInput != null) {
   });
 }
 
-let additionalGoods = document.querySelectorAll(".additional-good__label, .program-form__aim");
+let additionalGoods = document.querySelectorAll(".additional-good__label");
 additionalGoods.forEach(elem => {
   elem.addEventListener("keydown", function(event) {
-    console.log(event.keyCode);
-    if (event.keyCode == 13) {
+    if (event.keyCode == 13 || event.keyCode == 32) {
       let inputCheckbox = elem.previousElementSibling;
       console.log(inputCheckbox);
       inputCheckbox.checked = !inputCheckbox.checked;
     }
+    let additionalGoodChoices = elem.parentElement.parentElement;
+    if (event.keyCode == 37) {
+      if (elem.parentElement != additionalGoodChoices.children[0]) {
+        elem.parentElement.previousSibling.children[1].focus();
+      } else {
+        console.log(additionalGoodChoices.children[additionalGoodChoices.children.length - 1].children[1]);
+        additionalGoodChoices.children[additionalGoodChoices.children.length - 1].children[1].focus();
+      }
+    }
+    else if (event.keyCode == 39) {
+      if (elem.parentElement != additionalGoodChoices.children[3]) {
+        elem.parentElement.nextSibling.children[1].focus();
+      } else {
+        console.log(additionalGoodChoices.children[0]);
+        additionalGoodChoices.children[0].children[1].focus();
+      }
+    }
   });
-})
+});
+
+let radioButtonsLabels = document.querySelectorAll(".program-form__aim");
+radioButtonsLabels.forEach(elem => {
+  elem.addEventListener("keydown", function(event) {
+    let radioButtonsBlock = elem.parentElement.parentElement;
+    if (event.keyCode == 37 || event.keyCode == 38) {
+      if (elem.parentElement != radioButtonsBlock.children[0]) {
+        elem.parentElement.previousSibling.children[0].checked = true;
+        elem.parentElement.previousSibling.children[1].focus();
+      } else {
+        radioButtonsBlock.children[radioButtonsBlock.children.length - 1].children[0].checked = true;
+        radioButtonsBlock.children[radioButtonsBlock.children.length - 1].children[1].focus();
+      }
+    }
+    else if (event.keyCode == 39 || event.keyCode == 40) {
+      if (elem.parentElement != radioButtonsBlock.children[radioButtonsBlock.children.length - 1]) {
+        elem.parentElement.nextSibling.children[0].checked = true;
+        elem.parentElement.nextSibling.children[1].focus();
+      } else {
+        radioButtonsBlock.children[0].children[0].checked = true;
+        radioButtonsBlock.children[0].children[1].focus();
+      }
+    }
+  });
+});
+
+let radioButtons = document.querySelectorAll(".radio-button-block, .additional-good");
+radioButtons.forEach(elem => {
+  elem.addEventListener("click", function(event) {
+    elem.children[0].checked = true;
+  });
+});

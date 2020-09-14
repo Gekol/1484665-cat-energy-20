@@ -3,10 +3,6 @@
   height: 40px;
   background-color: @choose-program-color;
   margin: 0 20px;
-
-  &:hover {
-    background-color: @choose-program-color-hover;
-  }
 }
 
 .program__link {
@@ -21,6 +17,12 @@
   text-transform: uppercase;
   text-decoration: none;
   margin-bottom: 2px;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background-color: @choose-program-color-hover;
+  }
 
   &:active {
     opacity: 0.3;

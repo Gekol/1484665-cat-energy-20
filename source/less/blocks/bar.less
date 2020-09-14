@@ -18,7 +18,8 @@
   color: @black-color;
   text-transform: uppercase;
   .set-font(16px, 20px);
-  padding-right: 5px;
+  padding: 0;
+  margin-right: 5px;
   border: none;
   background-color: transparent;
 }
@@ -83,7 +84,8 @@
       bottom: 15px;
     }
 
-    &::-webkit-slider-thumb:hover {
+    &::-webkit-slider-thumb:hover,
+    &::-webkit-slider-thumb:focus {
       filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
     }
 
@@ -105,20 +107,21 @@
 
   .bar__button {
     position: relative;
-    padding: 4px 10px;
+    margin: 4px 10px;
     .set-font(20px, 30px);
 
     &::after {
       content: "";
       display: block;
-      width: 45px;
+      width: 100%;
       border-bottom: 1px dotted @black-color;
       opacity: 0.24;
       position: absolute;
     }
 
-
-    &:hover {
+    &:hover,
+    &:focus {
+      outline: none;
       &::after {
         border: none;
         height: 1px;
@@ -150,7 +153,7 @@
     .set-font(20px, 30px);
 
     &__before {
-      padding-right: 14px;
+      margin-right: 14px;
     }
   }
 }
