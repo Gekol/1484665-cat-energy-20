@@ -171,10 +171,3 @@ if (weightInput != null) {
     }
   });
 }
-
-let radioButtons = document.querySelectorAll(".radio-button-block");
-radioButtons.forEach(elem => {
-  elem.addEventListener("click", function(event) {
-    elem.children[0].checked = true;
-  });
-});
