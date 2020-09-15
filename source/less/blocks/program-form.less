@@ -63,7 +63,7 @@
 
 .program-form__aim {
   flex-grow: 1;
-  margin-left: 46px;
+  padding-left: 46px;
   position: relative;
   margin-top: 7px;
 
@@ -71,8 +71,26 @@
     margin-bottom: 19px;
   }
 
-  &:focus {
-    outline: none;
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid @bar-border-color;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    box-sizing: border-box;
+  }
+
+  &:hover::before,
+  &:focus-within::before {
+    border-color: @bar-border-color-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -117,7 +135,13 @@
   }
 
   .program-form__aim {
-    margin-left: 60px;
+    padding-left: 60px;
+
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -5px;
+    }
   }
 
   .program-form__title {
@@ -235,7 +259,7 @@
   }
 
   .program-form__aim {
-    margin-left: 60px;
+    padding-left: 60px;
   }
 
   .program-form__subtitle {

@@ -1,24 +1,19 @@
 .aim-option {
-  display: none;
+  position: absolute;
+  opacity: 0;
 
-  &:checked + ::before {
-    content: "";
-    display: block;
-    width: 13.5px;
-    height: 13.5px;
-    background-color: @choose-program-color;
-    position: absolute;
-    border-radius: 50%;
-    left: -37px;
-    top: 2px;
+  &:checked + .program-form__aim::before,
+  &:focus + .program-form__aim::before {
+    background-image: url("../img/radiobutton-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13.5px;
   }
 }
 
 @media (min-width: @tablet-size) {
-  .aim-option:checked + ::before {
-    top: 6px;
-    width: 18px;
-    height: 18px;
-    left: -48px;
+  .aim-option:checked + .program-form__aim::before,
+  .aim-option:focus + .program-form__aim::before {
+    background-size: 18px;
   }
 }

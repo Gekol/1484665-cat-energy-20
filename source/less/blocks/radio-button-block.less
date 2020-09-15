@@ -6,37 +6,10 @@
   &:last-child {
     margin-bottom: 9px;
   }
-
-  &::before {
-    content: "";
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid @bar-border-color;
-    position: absolute;
-    top: 1px;
-    box-sizing: border-box;
-  }
-
-  &:hover::before,
-  &:focus-within::before {
-    border-color: @bar-border-color-hover;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: @tablet-size) {
   .radio-button-block {
-    &::before {
-      width: 40px;
-      height: 40px;
-      top: -5px;
-    }
-
     &:not(:last-child) {
       margin-bottom: 24px;
     }
