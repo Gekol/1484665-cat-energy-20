@@ -2,12 +2,19 @@
   position: absolute;
   opacity: 0;
 
-  &:checked + .program-form__aim::before,
+  &:checked + .program-form__aim::before {
+    background-image: url("../img/radiobutton-active.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 13.5px;
+  }
+
   &:focus + .program-form__aim::before {
     background-image: url("../img/radiobutton-active.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 13.5px;
+    border-color: @bar-border-color-hover;
   }
 }
 
